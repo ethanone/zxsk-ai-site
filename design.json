@@ -1,0 +1,501 @@
+{
+  "designSystem": {
+    "meta": {
+      "name": "Unified Mobility Design System",
+      "version": "1.1.0",
+      "description": "An updated comprehensive design system combining Verizon Connect's professional tech, Yunex Traffic's green innovation, and Aisin's enterprise automotive excellence, with enhanced business-specific elements for HTZL.AI (AI vehicle/robotics solutions)",
+      "theme": "Smart Mobility & Transportation Technology"
+    },
+    "colors": {
+      "primary": {
+        "main": "#007BFF",
+        "light": "#4DA3FF",
+        "dark": "#0056CC",
+        "contrast": "#FFFFFF"
+      },
+      "secondary": {
+        "main": "#D60000",
+        "light": "#FF4444",
+        "dark": "#990000",
+        "contrast": "#FFFFFF"
+      },
+      "success": {
+        "main": "#00C851",
+        "light": "#4DDB7A",
+        "dark": "#007E33",
+        "contrast": "#FFFFFF"
+      },
+      "warning": {
+        "main": "#FF8800",
+        "light": "#FFB84D",
+        "dark": "#CC6600",
+        "contrast": "#FFFFFF"
+      },
+      "error": {
+        "main": "#D60000",
+        "light": "#FF4444",
+        "dark": "#990000",
+        "contrast": "#FFFFFF"
+      },
+      "neutral": {
+        "white": "#FFFFFF",
+        "gray50": "#F8F9FA",
+        "gray100": "#F1F3F4",
+        "gray200": "#E8EAED",
+        "gray300": "#DADCE0",
+        "gray400": "#BDC1C6",
+        "gray500": "#9AA0A6",
+        "gray600": "#80868B",
+        "gray700": "#5F6368",
+        "gray800": "#3C4043",
+        "gray900": "#202124",
+        "black": "#000000"
+      },
+      "brand": {
+        "verizonBlue": "#000066",
+        "yunexGreen": "#00A651",
+        "aisinRed": "#CC0000",
+        "techGradient": "linear-gradient(135deg, #007BFF 0%, #00A651 100%)",
+        "mobilityGradient": "linear-gradient(135deg, #000066 0%, #007BFF 50%, #00A651 100%)"
+      },
+      "semantic": {
+        "background": {
+          "primary": "#FFFFFF",
+          "secondary": "#F8F9FA",
+          "tertiary": "#F1F3F4"
+        },
+        "surface": {
+          "elevated": "#FFFFFF",
+          "overlay": "rgba(0, 0, 0, 0.6)",
+          "modal": "#FFFFFF"
+        },
+        "text": {
+          "primary": "#202124",
+          "secondary": "#5F6368",
+          "tertiary": "#80868B",
+          "inverse": "#FFFFFF",
+          "link": "#007BFF",
+          "linkHover": "#0056CC"
+        },
+        "business": {
+          "tech": "#007BFF",
+          "innovation": "#00A651",
+          "engineering": "#D60000",
+          "data": "#FF8800",
+          "warningFault": "#D60000"
+        }
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "primary": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        "secondary": "'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "mono": "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace"
+      },
+      "fontWeight": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extrabold": 800
+      },
+      "fontSize": {
+        "xs": "0.75rem",
+        "sm": "0.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem",
+        "5xl": "3rem",
+        "6xl": "3.75rem",
+        "7xl": "4.5rem"
+      },
+      "lineHeight": {
+        "tight": 1.25,
+        "snug": 1.375,
+        "normal": 1.5,
+        "relaxed": 1.625,
+        "loose": 2
+      },
+      "headings": {
+        "h1": {
+          "fontSize": "3rem",
+          "fontWeight": 700,
+          "lineHeight": 1.25,
+          "letterSpacing": "-0.025em",
+          "marginBottom": "1.5rem"
+        },
+        "h2": {
+          "fontSize": "2.25rem",
+          "fontWeight": 600,
+          "lineHeight": 1.3,
+          "letterSpacing": "-0.025em",
+          "marginBottom": "1.25rem"
+        },
+        "h3": {
+          "fontSize": "1.875rem",
+          "fontWeight": 600,
+          "lineHeight": 1.35,
+          "marginBottom": "1rem"
+        },
+        "h4": {
+          "fontSize": "1.5rem",
+          "fontWeight": 500,
+          "lineHeight": 1.4,
+          "marginBottom": "0.875rem"
+        },
+        "h5": {
+          "fontSize": "1.25rem",
+          "fontWeight": 500,
+          "lineHeight": 1.4,
+          "marginBottom": "0.75rem"
+        },
+        "h6": {
+          "fontSize": "1.125rem",
+          "fontWeight": 500,
+          "lineHeight": 1.4,
+          "marginBottom": "0.625rem"
+        }
+      },
+      "body": {
+        "large": {
+          "fontSize": "1.125rem",
+          "lineHeight": 1.625,
+          "fontWeight": 400
+        },
+        "medium": {
+          "fontSize": "1rem",
+          "lineHeight": 1.5,
+          "fontWeight": 400
+        },
+        "small": {
+          "fontSize": "0.875rem",
+          "lineHeight": 1.5,
+          "fontWeight": 400
+        }
+      }
+    },
+    "spacing": {
+      "scale": {
+        "0": "0",
+        "1": "0.25rem",
+        "2": "0.5rem",
+        "3": "0.75rem",
+        "4": "1rem",
+        "5": "1.25rem",
+        "6": "1.5rem",
+        "8": "2rem",
+        "10": "2.5rem",
+        "12": "3rem",
+        "16": "4rem",
+        "20": "5rem",
+        "24": "6rem",
+        "32": "8rem",
+        "40": "10rem",
+        "48": "12rem",
+        "56": "14rem",
+        "64": "16rem"
+      },
+      "component": {
+        "padding": {
+          "xs": "0.5rem",
+          "sm": "0.75rem",
+          "md": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem",
+          "2xl": "3rem"
+        },
+        "margin": {
+          "xs": "0.5rem",
+          "sm": "0.75rem",
+          "md": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem",
+          "2xl": "3rem"
+        },
+        "gap": {
+          "xs": "0.5rem",
+          "sm": "0.75rem",
+          "md": "1rem",
+          "lg": "1.5rem",
+          "xl": "2rem"
+        }
+      },
+      "layout": {
+        "containerMaxWidth": "1200px",
+        "sectionPadding": "4rem 1rem",
+        "cardPadding": "1.5rem",
+        "buttonPadding": "0.75rem 1.5rem"
+      }
+    },
+    "shadows": {
+      "none": "none",
+      "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+      "default": "0 4px 6px rgba(0, 0, 0, 0.1)",
+      "md": "0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)",
+      "lg": "0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05)",
+      "xl": "0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04)",
+      "2xl": "0 25px 50px rgba(0, 0, 0, 0.25)",
+      "inner": "inset 0 2px 4px rgba(0, 0, 0, 0.06)",
+      "outline": "0 0 0 3px rgba(0, 123, 255, 0.5)",
+      "brand": {
+        "primary": "0 4px 14px rgba(0, 123, 255, 0.2)",
+        "secondary": "0 4px 14px rgba(214, 0, 0, 0.2)",
+        "success": "0 4px 14px rgba(0, 200, 81, 0.2)"
+      }
+    },
+    "borders": {
+      "width": {
+        "none": "0",
+        "thin": "1px",
+        "medium": "2px",
+        "thick": "4px"
+      },
+      "style": {
+        "solid": "solid",
+        "dashed": "dashed",
+        "dotted": "dotted"
+      },
+      "radius": {
+        "none": "0",
+        "sm": "4px",
+        "default": "8px",
+        "md": "12px",
+        "lg": "16px",
+        "xl": "24px",
+        "full": "9999px"
+      },
+      "color": {
+        "default": "#E8EAED",
+        "light": "#F1F3F4",
+        "medium": "#DADCE0",
+        "dark": "#BDC1C6",
+        "primary": "#007BFF",
+        "secondary": "#D60000",
+        "success": "#00C851"
+      }
+    },
+    "animations": {
+      "duration": {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "500ms",
+        "slower": "750ms"
+      },
+      "easing": {
+        "linear": "linear",
+        "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
+        "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "bounce": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+      },
+      "transforms": {
+        "hover": {
+          "scale": "scale(1.05)",
+          "scaleButton": "scale(1.02)",
+          "translateY": "translateY(-2px)",
+          "rotate": "rotate(2deg)"
+        },
+        "active": {
+          "scale": "scale(0.98)",
+          "translateY": "translateY(1px)"
+        }
+      },
+      "transitions": {
+        "default": "all 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "color": "color 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "background": "background-color 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "transform": "transform 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "shadow": "box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1)"
+      }
+    },
+    "components": {
+      "button": {
+        "base": {
+          "fontFamily": "Inter, sans-serif",
+          "fontWeight": 500,
+          "borderRadius": "8px",
+          "transition": "all 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+          "cursor": "pointer",
+          "display": "inline-flex",
+          "alignItems": "center",
+          "justifyContent": "center",
+          "textDecoration": "none"
+        },
+        "sizes": {
+          "sm": {
+            "padding": "0.5rem 1rem",
+            "fontSize": "0.875rem",
+            "minHeight": "2rem"
+          },
+          "md": {
+            "padding": "0.75rem 1.5rem",
+            "fontSize": "1rem",
+            "minHeight": "2.5rem"
+          },
+          "lg": {
+            "padding": "1rem 2rem",
+            "fontSize": "1.125rem",
+            "minHeight": "3rem"
+          }
+        },
+        "variants": {
+          "primary": {
+            "backgroundColor": "#007BFF",
+            "color": "#FFFFFF",
+            "border": "2px solid #007BFF",
+            "boxShadow": "0 4px 14px rgba(0, 123, 255, 0.2)",
+            "hover": {
+              "backgroundColor": "#0056CC",
+              "borderColor": "#0056CC",
+              "transform": "scale(1.02)",
+              "boxShadow": "0 6px 20px rgba(0, 123, 255, 0.3)"
+            }
+          },
+          "secondary": {
+            "backgroundColor": "#D60000",
+            "color": "#FFFFFF",
+            "border": "2px solid #D60000",
+            "boxShadow": "0 4px 14px rgba(214, 0, 0, 0.2)",
+            "hover": {
+              "backgroundColor": "#990000",
+              "borderColor": "#990000",
+              "transform": "scale(1.02)",
+              "boxShadow": "0 6px 20px rgba(214, 0, 0, 0.3)"
+            }
+          },
+          "outline": {
+            "backgroundColor": "transparent",
+            "color": "#007BFF",
+            "border": "2px solid #007BFF",
+            "hover": {
+              "backgroundColor": "#007BFF",
+              "color": "#FFFFFF",
+              "transform": "scale(1.02)"
+            }
+          }
+        }
+      },
+      "card": {
+        "base": {
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": "12px",
+          "boxShadow": "0 4px 6px rgba(0, 0, 0, 0.1)",
+          "padding": "1.5rem",
+          "transition": "all 300ms cubic-bezier(0.4, 0, 0.2, 1)"
+        },
+        "hover": {
+          "transform": "translateY(-2px)",
+          "boxShadow": "0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05)"
+        }
+      },
+      "input": {
+        "base": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "1rem",
+          "padding": "0.75rem 1rem",
+          "borderRadius": "8px",
+          "border": "2px solid #E8EAED",
+          "backgroundColor": "#FFFFFF",
+          "transition": "all 300ms cubic-bezier(0.4, 0, 0.2, 1)",
+          "width": "100%"
+        },
+        "states": {
+          "focus": {
+            "borderColor": "#007BFF",
+            "boxShadow": "0 0 0 3px rgba(0, 123, 255, 0.1)",
+            "outline": "none"
+          },
+          "error": {
+            "borderColor": "#D60000",
+            "boxShadow": "0 0 0 3px rgba(214, 0, 0, 0.1)"
+          },
+          "success": {
+            "borderColor": "#00C851",
+            "boxShadow": "0 0 0 3px rgba(0, 200, 81, 0.1)"
+          }
+        }
+      }
+    },
+    "layout": {
+      "breakpoints": {
+        "xs": "320px",
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1536px"
+      },
+      "grid": {
+        "columns": 12,
+        "gap": "1rem",
+        "containerPadding": "1rem"
+      },
+      "zIndex": {
+        "hide": -1,
+        "auto": "auto",
+        "base": 0,
+        "docked": 10,
+        "dropdown": 1000,
+        "sticky": 1100,
+        "banner": 1200,
+        "overlay": 1300,
+        "modal": 1400,
+        "popover": 1500,
+        "skipLink": 1600,
+        "toast": 1700,
+        "tooltip": 1800
+      }
+    },
+    "patterns": {
+      "mobility": {
+        "iconography": {
+          "style": "outlined",
+          "strokeWidth": "2px",
+          "size": "24px"
+        },
+        "dataVisualization": {
+          "colorPalette": ["#007BFF", "#00C851", "#FF8800", "#D60000", "#9AA0A6"],
+          "chartPadding": "1rem",
+          "gridColor": "#E8EAED"
+        },
+        "navigation": {
+          "height": "4rem",
+          "backgroundColor": "#FFFFFF",
+          "borderBottom": "1px solid #E8EAED",
+          "boxShadow": "0 2px 4px rgba(0, 0, 0, 0.05)"
+        }
+      }
+    },
+    "icons": {
+      "style": "solid",
+      "size": "24px",
+      "themes": {
+        "tech": "#007BFF",
+        "eco": "#00A859",
+        "eng": "#D60000"
+      },
+      "businessSpecific": {
+        "cV2X": {
+          "color": "#007BFF",
+          "description": "Network icon for C-V2X and R2X protocols"
+        },
+        "roboJoint": {
+          "color": "#D60000",
+          "description": "Cpu icon for AI RoboJoint and PHM"
+        },
+        "dataFusion": {
+          "color": "#00A859",
+          "description": "Layers icon for sensor fusion and digital twin"
+        },
+        "warningFault": {
+          "color": "#D60000",
+          "description": "Alert icon for fault prediction"
+        }
+      }
+    }
+  }
+}
