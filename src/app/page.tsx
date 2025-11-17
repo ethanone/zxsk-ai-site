@@ -154,13 +154,13 @@ const Navigation = memo(({ uiText }: { uiText: UIText }) => {
             <button
               onClick={toggleLanguage}
               className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-green-600 transition-colors"
-              title={t("切换语言", "Switch Language")}
+              title={uiText.navigation.switchLanguage}
             >
               <Languages className="w-4 h-4" />
               <span>{language === 'zh' ? 'EN' : '中文'}</span>
             </button>
             <Button className="gradient-primary text-white shadow-lg hover:shadow-xl transition-shadow">
-              {t("索取样品", "Request Sample")}
+              {uiText.navigation.requestSample}
             </Button>
           </div>
 
@@ -199,10 +199,10 @@ const Navigation = memo(({ uiText }: { uiText: UIText }) => {
               className="flex items-center space-x-2 py-3 px-4 text-gray-700 hover:text-green-600 hover:bg-green-50 rounded-lg transition-colors w-full"
             >
               <Languages className="w-5 h-5" />
-              <span>{t("切换为英文", "Switch to Chinese")}</span>
+              <span>{uiText.navigation.switchToEnglish}</span>
             </button>
             <Button className="w-full mt-4 gradient-primary text-white">
-              {t("索取样品", "Request Sample")}
+              {uiText.navigation.requestSample}
             </Button>
           </motion.div>
         )}
