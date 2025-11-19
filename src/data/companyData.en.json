@@ -1,277 +1,281 @@
 {
   "companyInfo": {
-    "name": "Sichuan New Shi Long Technology Co., Ltd.",
-    "nameEn": "Sichuan New Shi Long Technology Co., Ltd.",
-    "brandName": "New Shi Long Tech",
-    "slogan": "Natural Excellence, Redefined by Integrity & Technology",
-    "sloganEn": "Natural Excellence, Redefined by Integrity & Technology",
-    "tagline": "Trusted Trader · Technology Innovator",
-    "focus": "Premium Agricultural Product Standardization & Intelligence",
-    "founded": "2023",
-    "website": "www.newshilong.com",
-    "phone": "+8613666241023",
-    "email": "uj.zhou@foxmail.com",
-    "emailSecondary": "carolynne0618@gmail.com",
-    "address": "No. 1003, 10th Floor, Unit 2, Building 7, No. 399 West Fucheng Avenue, China (Sichuan) Pilot Free Trade Zone, Chengdu Hi-Tech Zone",
-    "capacity": "50 tons annual production capacity",
+    "name": "Zhixiang Data",
+    "nameEn": "Zhixiang Data",
+    "brandName": "Zhixiang Data",
+    "slogan": "Activating Data Value for the Entire IP Chain",
+    "sloganEn": "Activating Data Value for the Entire IP Chain",
+    "tagline": "Data-Driven · Intelligent Decisions",
+    "focus": "Intellectual Property Data Services",
+    "founded": "2020",
+    "website": "www.zhixiang-data.com",
+    "phone": "+86 138 0000 0000",
+    "email": "contact@zhixiang-data.com",
+    "emailSecondary": "info@zhixiang-data.com",
+    "address": "No. 1 Zhongguancun Street, Haidian District, Beijing, China",
+    "capacity": "Comprehensive IP data services",
     "responseTime": "Response within 2 business days"
   },
   "aboutUs": {
     "intro": [
-      "Sichuan New Shi Long Technology Co., Ltd. is an innovative agricultural product trading company based in Chengdu and serving the global market. We specialize in promoting high-quality Chinese specialty agricultural products, particularly Morel Mushrooms known as \"natural luxury goods\", to the international market.",
-      "We deeply understand that in global trade, trust is the only passport. Therefore, from the very beginning, we have established \"Integrity and Quality\" as our highest principle, building a strict three-stage quality control system and complete international certification system (SC, HACCP, ISO 22000), ensuring that every product 100% fulfills our promise of quality and safety.",
-      "As a \"technology\"-driven trading company, we are developing an AI vision-based automated grading system, committed to solving the subjectivity problem of traditional agricultural product grading, upgrading industry standards from \"experience judgment\" to \"data-driven\", providing truly transparent, consistent, and quantifiable excellent products to global customers."
+      "Zhixiang Data specializes in providing professional data services and intelligent solutions for the entire intellectual property industry chain. With years of experience in the IP field, we deeply understand the data needs and business pain points of different entities such as government agencies, protection centers, industrial parks, and agency firms.",
+      "We firmly believe that data is the core driving force for the transformation and upgrading of the intellectual property industry. By establishing a technically advanced data management system, we transform massive unstructured data into actionable and decision-worthy value information, helping clients achieve digital and intelligent transformation.",
+      "Zhixiang Data adheres to the service philosophy of 'long-termism' and 'refund if ineffective', with the common goal of achieving real results, providing clients with low-threshold and high-effectiveness data solutions."
     ],
-    "mission": "Driven by technology for agricultural product standardization, through transparent quality control systems and data-based quality management, we provide 100% reliable quality products to global customers, rebuilding the foundation of trust in premium agricultural product trade.",
-    "vision": "To become a global leading intelligent agricultural product supplier, leading industry standard innovation with technology, showcasing the beautiful achievements of China's rural revitalization to the world.",
-    "values": ["Integrity First", "Quality Supreme", "Technology Innovation", "Customer Oriented"]
+    "mission": "Explore key scenario digital intelligence solutions based on artificial intelligence technology with low cost and strong effectiveness. Zhixiang provides a unified platform that achieves end-to-end data management while enabling data construction, real-time analysis, and value output for key client scenarios.",
+    "vision": "To become the most trusted data service provider in the intellectual property field, driving industry innovation with data and empowering industrial upgrading with intelligence.",
+    "values": [
+      "Equal emphasis on data authority and standardization",
+      "Equal emphasis on completeness and timeliness",
+      "Equal emphasis on accuracy and usability",
+      "Equal emphasis on long-termism and effectiveness orientation"
+    ]
   },
   "coreAdvantages": [
     {
       "icon": "Shield",
-      "title": "Certified Quality · Price Advantage",
-      "description": "Complete SC, HACCP and ISO 22000 international certification system ensures every step from source to processing meets international food safety standards. Through efficient supply chain direct procurement and strict cost control, we provide extremely competitive profit margins while ensuring excellent quality.",
-      "highlights": ["International Triple Certification", "Supply Chain Direct Procurement", "High Cost Performance"]
+      "title": "Authoritative Data Sources",
+      "description": "Relying on government authoritative open databases and industry trusted processed datasets, ensuring the authority and reliability of data sources, providing a solid data foundation for customer decisions.",
+      "highlights": ["Government Open Database", "Industry Trusted Dataset", "Multi-source Integration"]
     },
     {
       "icon": "CheckCircle2",
-      "title": "Absolute Risk Control · Stable Supply",
-      "description": "50 tons annual production capacity ensures stable supply. Each batch of goods comes with detailed pre-shipment inspection reports, supporting flexible international trade terms (FOB/CIF) and negotiated payment methods, minimizing your procurement risk and ensuring peace of mind for every transaction.",
-      "highlights": ["50 Tons Annual Capacity", "Pre-shipment Inspection", "Zero Risk Commitment"]
-    },
-    {
-      "icon": "Sparkles",
-      "title": "Three-Stage QC · 100% Transparent",
-      "description": "Original three-stage inspection system: Farm source screening → Processing workshop precision grading → Pre-shipment AQL sampling. Each link has strict quality control and traceable records, achieving full-process quality management from farm to delivery, ensuring products 100% meet promised standards.",
-      "highlights": ["Three-Stage Inspection", "Fully Traceable", "AQL Standard Sampling"]
+      "title": "Rigorous Data Governance",
+      "description": "Following national information security standards, data security standards, and trusted data space standard systems, establishing comprehensive data governance processes to ensure data security and compliance.",
+      "highlights": ["Info Security Standards", "Data Security Standards", "Trusted Data Space"]
     },
     {
       "icon": "Cpu",
-      "title": "AI-Driven · Technology Innovation",
-      "description": "The Morchella-AI automated vision grading system under development will transform subjective descriptions in the NY/T 4344-2023 national standard into objective, quantifiable data indicators. Through 3D scanning, image recognition, and color spectrum analysis, we achieve pixel-level precise grading, leading the industry from experience judgment to data-driven.",
-      "highlights": ["AI Visual Detection", "Data-Driven Grading", "Industry Standard Innovation"]
+      "title": "Intelligent Data Applications",
+      "description": "Providing various forms of data application products such as datasets, data reports, and data platforms to meet diverse customer needs and maximize data value.",
+      "highlights": ["Standard Datasets", "Custom Reports", "Intelligent Platform"]
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Efficient Data Collaboration",
+      "description": "Achieving multi-source unified data, top-down connectivity, and classified support, ensuring safe and smooth data sharing and exchange, improving inter-organizational collaboration efficiency.",
+      "highlights": ["Multi-source Unity", "Top-down", "Secure Sharing"]
     }
   ],
   "focusAreas": [
     {
-      "name": "Quality Management",
+      "name": "Government Agencies",
       "icon": "Shield",
-      "description": "Three-stage quality control system covering farm, processing, and shipment, ensuring 100% product quality.",
-      "color": "#10B981"
+      "description": "Digital intelligence judgment, smart supervision, government-enterprise collaboration",
+      "color": "#8B2F39"
     },
     {
-      "name": "International Certification",
+      "name": "Protection Centers",
       "icon": "CheckCircle2",
-      "description": "Complete certification system of SC, HACCP, ISO 22000, meeting international food safety standards.",
-      "color": "#3B82F6"
+      "description": "Overseas protection, tiered warning, anomaly detection",
+      "color": "#6B4C7A"
     },
     {
-      "name": "Intelligent Grading",
-      "icon": "Cpu",
-      "description": "AI vision-based automated grading system, transforming subjective standards into objective data.",
-      "color": "#8B5CF6"
+      "name": "Industrial Parks",
+      "icon": "Home",
+      "description": "Industry navigation, excellent enterprise identification, investment invitation",
+      "color": "#D4AF37"
     },
     {
-      "name": "Global Trade",
-      "icon": "TrendingUp",
-      "description": "Proficient in FOB/CIF international trade terms, providing full customs clearance documentation and logistics support.",
-      "color": "#F59E0B"
+      "name": "Agency Firms",
+      "icon": "FileText",
+      "description": "Regional analysis, case source recommendation, intelligent drafting",
+      "color": "#C9A872"
     }
   ],
   "team": {
-    "intro": "The New Shi Long team consists of senior agricultural product trade experts, international certification quality management personnel, and AI technology R&D personnel. We combine traditional trade experience with modern technological innovation to provide professional, efficient, and reliable services to global customers.",
+    "intro": "The Zhixiang Data team consists of senior intellectual property experts, data scientists, and artificial intelligence engineers. We have both deep industry experience and cutting-edge technology expertise, providing professional, efficient, and reliable data services to clients.",
     "leadership": [
       {
-        "name": "Supply Chain Management Team",
-        "nameEn": "Supply Chain Team",
-        "title": "Source Quality Control · Direct Procurement Advantage",
-        "titleEn": "Source Quality Control",
-        "avatar": "/images/team/supply-chain.jpg",
-        "education": "Professional Team",
-        "background": "Deep cultivation in Sichuan agricultural product producing areas for many years, establishing long-term cooperative relationships with quality farms",
+        "name": "Data Governance Team",
+        "nameEn": "Data Governance Team",
+        "title": "Data Quality Assurance · Security Compliance",
+        "titleEn": "Data Quality Assurance",
+        "avatar": "/images/team/data-governance.jpg",
+        "education": "Data Management Experts",
+        "background": "Years of experience in data governance, familiar with national information security and data security standards",
         "achievements": [
-          "Established supplier network covering core producing areas in Sichuan",
-          "Ensured stable supply of 50 tons annual production capacity",
-          "Implemented strict farm admission and source screening standards"
+          "Established comprehensive data governance system",
+          "Ensured data authority, standardization, and completeness",
+          "Guaranteed data security and compliance"
         ],
-        "expertise": ["Supply Chain Management", "Production Area Resources", "Quality Control", "Cost Control"]
+        "expertise": ["Data Governance", "Information Security", "Compliance Management", "Quality Control"]
       },
       {
-        "name": "Quality Management Team",
-        "nameEn": "Quality Assurance Team",
-        "title": "International Certification · Three-Stage Quality Control",
-        "titleEn": "Quality Management",
-        "avatar": "/images/team/qa-team.jpg",
-        "education": "Certified Quality Professionals",
-        "background": "Professional quality inspection team with HACCP and ISO 22000 system certification management experience",
+        "name": "AI Algorithm Team",
+        "nameEn": "AI Algorithm Team",
+        "title": "Intelligent Technology Innovation · Scenario Implementation",
+        "titleEn": "Intelligent Innovation",
+        "avatar": "/images/team/ai-team.jpg",
+        "education": "Artificial Intelligence Experts",
+        "background": "Rich experience in machine learning and natural language processing, focusing on IP scenario applications",
         "achievements": [
-          "Established and executed three-stage quality control system",
-          "Ensured 100% products meet international food safety standards",
-          "Provided detailed pre-shipment inspection reports for each batch"
+          "Developed multiple IP AI applications",
+          "Implemented intelligent judgment, intelligent drafting and other functions",
+          "Improved customer work efficiency by over 50%"
         ],
-        "expertise": ["Food Safety", "Quality Systems", "International Certification", "Risk Management"]
+        "expertise": ["Machine Learning", "NLP", "Knowledge Graph", "Intelligent Applications"]
       },
       {
-        "name": "Export Trade Team",
-        "nameEn": "Export Trade Team",
-        "title": "International Trade · Professional Service",
-        "titleEn": "International Trade",
-        "avatar": "/images/team/export-team.jpg",
-        "education": "International Trade Specialists",
-        "background": "Professional foreign trade team proficient in international trade rules and customs clearance procedures",
+        "name": "Industry Expert Team",
+        "nameEn": "Industry Expert Team",
+        "title": "Deep Industry Experience · Insight into Needs",
+        "titleEn": "Industry Expertise",
+        "avatar": "/images/team/industry-expert.jpg",
+        "education": "Intellectual Property Experts",
+        "background": "Long-term service to government agencies, protection centers, industrial parks, agency firms and other entities",
         "achievements": [
-          "Proficient in international trade terms such as FOB/CIF",
-          "Provided complete customs clearance documentation and logistics support",
-          "Responded to all customer needs within 2 business days"
+          "Deep understanding of business pain points of various entities",
+          "Designed targeted solutions",
+          "Successfully served hundreds of clients"
         ],
-        "expertise": ["International Trade", "Customs Clearance Logistics", "Customer Service", "Business Negotiation"]
+        "expertise": ["Patent Analysis", "Trademark Management", "Copyright Protection", "Business Consulting"]
       },
       {
-        "name": "Technology R&D Team",
-        "nameEn": "R&D Team",
-        "title": "AI R&D · Technology Innovation",
-        "titleEn": "Technology Innovation",
-        "avatar": "/images/team/rd-team.jpg",
-        "education": "AI & Computer Science Experts",
-        "background": "AI R&D team with machine vision and deep learning technology background",
+        "name": "Customer Service Team",
+        "nameEn": "Customer Service Team",
+        "title": "Professional Service · Long-term Companionship",
+        "titleEn": "Professional Service",
+        "avatar": "/images/team/service-team.jpg",
+        "education": "Service Management Experts",
+        "background": "Adhering to the service philosophy of long-termism and refund if ineffective, committed to creating real value for clients",
         "achievements": [
-          "Led Morchella-AI automated grading system development",
-          "Built morel mushroom image dataset and annotation system",
-          "Promoted industry transformation from experience judgment to data-driven"
+          "Customer satisfaction over 95%",
+          "Renewal rate maintained at over 90%",
+          "Zero complaint record"
         ],
-        "expertise": ["Computer Vision", "Deep Learning", "Image Recognition", "System Integration"]
+        "expertise": ["Customer Service", "Project Management", "Training Support", "Value Delivery"]
       }
     ],
     "teamSize": {
-      "development": "15+",
-      "research": "5+",
-      "aiAlgorithm": "3+",
+      "development": "30+",
+      "research": "15+",
+      "aiAlgorithm": "10+",
       "advisors": {
-        "medical": "Agricultural Expert Advisory Team",
-        "power": "Food Safety Certification Experts",
-        "design": "International Trade Advisors"
+        "medical": "IP Legal Advisory Team",
+        "power": "Data Security & Compliance Experts",
+        "design": "Senior Industry Advisors"
       }
     }
   },
   "caseStudies": [
     {
       "id": "case-01",
-      "title": "Three-Stage Quality Control System",
-      "subtitle": "Full-Process Quality Management from Farm to Delivery",
-      "category": "Quality Management",
+      "title": "Government Digital Intelligence Supervision Platform",
+      "subtitle": "Helping government achieve smart supervision and government-enterprise collaboration",
+      "category": "Government Agencies",
       "icon": "Shield",
-      "color": "#10B981",
-      "technologies": ["Source Screening", "Precision Grading", "AQL Sampling"],
-      "painPoint": "Traditional agricultural product trade lacks transparent quality assurance systems, resulting in high customer procurement risks and high trust costs.",
+      "color": "#8B2F39",
+      "technologies": ["Digital Intelligence Judgment", "Smart Supervision", "Government-Enterprise Collaboration"],
+      "painPoint": "Traditional supervision model relies on manual work, low efficiency, difficult to detect anomalies in time, information asymmetry between government and enterprises, difficult collaboration.",
       "features": [
         {
-          "name": "Farm Source Control",
-          "description": "Only cooperate with quality farms meeting high standards, conducting first quality screening at picking and initial drying stages"
+          "name": "Intelligent Judgment System",
+          "description": "Based on big data and AI technology, automatically analyze massive IP data, identify abnormal patterns, and assist supervision decisions"
         },
         {
-          "name": "Processing Workshop Selection",
-          "description": "In HACCP and ISO 22000 certified environments, quality control team conducts strict manual grading according to national standards"
+          "name": "Visual Supervision Dashboard",
+          "description": "Real-time display of panoramic IP data in the jurisdiction, supporting multi-dimensional analysis and drill-down, improving supervision efficiency"
         },
         {
-          "name": "Pre-shipment Review",
-          "description": "Final sampling inspection using international AQL standards, issuing pre-shipment inspection reports to ensure 100% compliance with order requirements"
+          "name": "Government-Enterprise Collaboration Platform",
+          "description": "Breaking down information barriers between government and enterprises, achieving precise policy push and rapid response to enterprise demands"
         }
       ],
-      "outcome": "Successfully established a transparent and traceable quality management system, minimizing customer procurement risks and significantly improving repurchase rates.",
-      "image": "/images/case-quality-system.webp"
+      "outcome": "Supervision efficiency improved by 60%, anomaly detection time shortened by 80%, government-enterprise collaboration satisfaction reached over 95%.",
+      "image": "/images/case-government.webp"
     },
     {
       "id": "case-02",
-      "title": "International Certification System",
-      "subtitle": "SC · HACCP · ISO 22000 Triple Guarantee",
-      "category": "Food Safety",
+      "title": "Protection Center Overseas Warning System",
+      "subtitle": "Safeguarding enterprise overseas IP protection",
+      "category": "Protection Centers",
       "icon": "CheckCircle2",
-      "color": "#3B82F6",
-      "technologies": ["SC Certification", "HACCP System", "ISO 22000"],
+      "color": "#6B4C7A",
+      "technologies": ["Overseas Protection", "Tiered Warning", "Anomaly Detection"],
+      "painPoint": "Enterprises lack awareness of overseas IP protection, lack effective risk warning mechanisms, and face high costs for rights protection.",
       "features": [
         {
-          "name": "SC Food Production License",
-          "description": "Obtained the highest license for legal production and sales in the Chinese market, ensuring compliant operations"
+          "name": "Global Patent Monitoring",
+          "description": "Real-time monitoring of patent application dynamics in major countries and regions worldwide, timely detection of potential infringement risks"
         },
         {
-          "name": "HACCP Hazard Analysis",
-          "description": "Implemented internationally recognized food safety assurance system, identifying and controlling key safety points in production processes"
+          "name": "Intelligent Tiered Warning",
+          "description": "Automatic assessment of risk levels based on AI algorithms, tiered push of warning information, helping enterprises focus on key risks"
         },
         {
-          "name": "ISO 22000 Management System",
-          "description": "Following globally accepted food safety management standards, establishing comprehensive systematic management capabilities"
+          "name": "Anomaly Behavior Recognition",
+          "description": "Identifying abnormal application patterns and malicious preemptive registration behavior, providing data support for enterprise rights protection"
         }
       ],
-      "outcome": "Complete international certification system provides strong qualification support for product exports, winning trust from global customers.",
-      "image": "/images/case-certifications.webp"
+      "outcome": "Successfully provided overseas protection services to 200+ enterprises, helping clients discover and handle 300+ potential risks in time.",
+      "image": "/images/case-protection.webp"
     },
     {
       "id": "case-03",
-      "title": "Morchella-AI Intelligent Grading System",
-      "subtitle": "Redefining Agricultural Product Quality Standards with AI",
-      "category": "Technology Innovation",
-      "icon": "Cpu",
-      "color": "#8B5CF6",
-      "technologies": ["3D Scanning", "Image Recognition", "Deep Learning", "Color Spectrum Analysis"],
-      "painPoint": "NY/T 4344-2023 national standard execution relies on manual experience. Descriptions like \"relatively symmetrical\" and \"minor defects\" are too subjective, leading to inconsistent grading.",
+      "title": "Industrial Park Investment Data Platform",
+      "subtitle": "Precise investment, helping parks achieve high-quality development",
+      "category": "Industrial Parks",
+      "icon": "Home",
+      "color": "#D4AF37",
+      "technologies": ["Industry Navigation", "Excellent Enterprise Identification", "Investment Invitation"],
       "features": [
         {
-          "name": "Form Digitization",
-          "description": "Using 3D structured light scanning technology to accurately measure and quantify cap symmetry, integrity, and volume parameters"
+          "name": "Industry Navigation Map",
+          "description": "Constructing industry chain maps, clearly displaying industry structure and enterprise distribution, providing basis for investment decisions"
         },
         {
-          "name": "Defect Detection",
-          "description": "High-resolution image recognition AI model objectively calculates defect area ratio, achieving pixel-level precise judgment"
+          "name": "Excellent Enterprise Identification",
+          "description": "Based on multi-dimensional data analysis, intelligently identifying excellent enterprises and potential enterprises that match the park positioning"
         },
         {
-          "name": "Color Standardization",
-          "description": "Through color spectrum analysis, transforming subjective color descriptions into precise color values, ensuring 100% consistency"
+          "name": "Precise Investment Invitation",
+          "description": "Generating enterprise profiles and investment scripts, supporting multi-channel precise reach to target enterprises via email, SMS, etc."
         }
       ],
-      "outcome": "Under development, will completely eliminate subjective judgment in the future, achieving truly data-driven grading and leading industry standard innovation.",
-      "image": "/images/case-ai-system.webp"
+      "outcome": "Investment success rate increased by 40%, number of excellent enterprises attracted tripled, park output value increased significantly.",
+      "image": "/images/case-park.webp"
     },
     {
       "id": "case-04",
-      "title": "International Trade Services",
-      "subtitle": "Professional · Efficient · Zero Risk",
-      "category": "Customer Service",
-      "icon": "TrendingUp",
-      "color": "#F59E0B",
-      "technologies": ["FOB/CIF", "Customs Documentation", "Flexible Payment", "Quick Response"],
+      "title": "Agency Intelligent Service System",
+      "subtitle": "AI empowerment, enhancing agency service capabilities",
+      "category": "Agency Firms",
+      "icon": "FileText",
+      "color": "#C9A872",
+      "technologies": ["Regional Analysis", "Case Source Recommendation", "Intelligent Drafting"],
       "features": [
         {
-          "name": "Flexible Trade Terms",
-          "description": "Proficient in international trade terms such as FOB and CIF, providing optimal logistics solutions according to customer needs"
+          "name": "Regional Market Analysis",
+          "description": "In-depth analysis of IP market conditions in target regions, providing data support for business expansion"
         },
         {
-          "name": "Complete Documentation Support",
-          "description": "Providing complete export customs clearance documentation including pre-shipment inspection reports, certificates of origin, health certificates, etc."
+          "name": "Intelligent Case Source Recommendation",
+          "description": "Based on customer profiles and historical data, intelligently recommending potential clients and business opportunities"
         },
         {
-          "name": "Quick Response Service",
-          "description": "Dedicated export manager responds to inquiries within 2 business days, providing quotations, samples, and technical support"
+          "name": "AI-Assisted Drafting",
+          "description": "Using NLP technology to assist in drafting patent application documents, improving drafting efficiency and quality"
         }
       ],
-      "outcome": "Established an efficient international trade service system, providing seamless procurement experience and zero-risk guarantee for global customers.",
-      "image": "/images/case-trade-service.webp"
+      "outcome": "Agency business volume increased by 50%, drafting efficiency improved by 70%, customer satisfaction significantly improved.",
+      "image": "/images/case-agency.webp"
     }
   ],
   "contact": {
-    "phone": "+8613666241023",
-    "email": "uj.zhou@foxmail.com",
-    "emailSecondary": "carolynne0618@gmail.com",
-    "address": "No. 1003, 10th Floor, Unit 2, Building 7, No. 399 West Fucheng Avenue, China (Sichuan) Pilot Free Trade Zone, Chengdu Hi-Tech Zone",
-    "addressShort": "Chengdu Hi-Tech Zone",
-    "wechat": "Please request WeChat via email",
-    "workingHours": "Monday to Friday 9:00-18:00 (GMT+8)",
+    "phone": "+86 138 0000 0000",
+    "email": "contact@zhixiang-data.com",
+    "emailSecondary": "info@zhixiang-data.com",
+    "address": "No. 1 Zhongguancun Street, Haidian District, Beijing, China",
+    "addressShort": "Beijing Zhongguancun",
+    "wechat": "Please contact via email for WeChat",
+    "workingHours": "Weekdays 9:00-18:00 (GMT+8)",
     "responseTime": "Response within 2 business days",
     "services": [
-      "Request Sample Kit (including Special, Grade A, Grade B + Price List)",
-      "Inquiry for Supply & Custom Solutions",
-      "Request SC/HACCP/ISO 22000 Certificate Documents",
-      "Schedule Factory Visit & Quality Audit"
+      "Get data samples and solution demos",
+      "Free customized industry solutions",
+      "Schedule product demo and trial",
+      "Learn about latest products, features and resources"
     ]
   }
 }
-

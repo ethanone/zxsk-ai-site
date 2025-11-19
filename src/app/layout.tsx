@@ -13,20 +13,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "新石龙科技 - 优质羊肚菌全球贸易商 | 三阶段品控 · AI智能分级",
-  description: "四川新石龙科技专注优质干羊肚菌国际贸易，拥有SC、HACCP、ISO 22000国际认证，创新三阶段品控体系，1000吨年产能稳定供应，正在研发Morchella-AI智能分级系统，为全球客户提供100%透明可靠的高端农产品。",
-  keywords: ["羊肚菌", "干羊肚菌", "Morel Mushrooms", "新石龙科技", "农产品出口", "食品认证", "HACCP", "ISO 22000", "AI分级", "三阶段品控", "国际贸易", "四川农产品"],
-  authors: [{ name: "New Shi Long Technology" }],
+  title: "知象数据 - 为知识产权全链条激活数据价值 | AI数据服务平台",
+  description: "知象数据专注于为知识产权全产业链提供专业的数据服务和智能解决方案。服务政府机关、保护中心、产业园区、代理机构，提供数智研判、智慧监管、海外保护、产业导航等关键场景解决方案。依托政府权威开放数据库，遵循国家信息安全和数据安全标准，为客户提供低成本、高实效的数据服务。",
+  keywords: ["知识产权", "数据服务", "知象数据", "AI数据平台", "专利数据", "商标数据", "版权保护", "数智研判", "智慧监管", "海外保护", "产业导航", "数据治理", "数据安全"],
+  authors: [{ name: "Zhixiang Data" }],
   icons: {
     icon: "/scxsl-logo.png",
     shortcut: "/scxsl-logo.png",
     apple: "/scxsl-logo.png",
   },
   openGraph: {
-    title: "新石龙科技 - 自然珍品，重塑于诚信与科技",
-    description: "优质干羊肚菌全球贸易商 | SC/HACCP/ISO认证 | 三阶段品控 | AI智能分级 | 1000吨年产能",
-    url: "https://www.newshilong.com",
-    siteName: "新石龙科技",
+    title: "知象数据 - 为知识产权全链条激活数据价值",
+    description: "专业的知识产权数据服务商 | AI驱动 | 权威数据源 | 安全合规 | 智能应用",
+    url: "https://www.zhixiang-data.com",
+    siteName: "知象数据",
     locale: "zh_CN",
     type: "website",
   },
@@ -43,12 +43,12 @@ export default function RootLayout({
       <head>
         {/* 移动端视口优化 - 防止缩放和布局问题 */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#8B2F39" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {/* DNS 预连接 - 性能优化 */}
-        <link rel="dns-prefetch" href="https://www.newshilong.com" />
+        <link rel="dns-prefetch" href="https://www.zhixiang-data.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

@@ -1,7 +1,6 @@
 "use client";
 
 import { memo, useState, useEffect } from "react";
-import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,36 +10,19 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import {
   Sparkles,
   Cpu,
-  HeartPulse,
   Zap,
-  PenTool,
   FileText,
-  Stethoscope,
   Home,
   TrendingUp,
-  Phone,
-  Mail,
-  MapPin,
-  ChevronRight,
-  Menu,
-  X,
   CheckCircle2,
-  Users,
-  Target,
-  Lightbulb,
   Shield,
   Languages,
+  Quote,
+  MessageCircle,
 } from "lucide-react";
 import companyDataZh from "@/data/companyData.json";
 import companyDataEn from "@/data/companyData.en.json";
@@ -53,18 +35,17 @@ type UIText = typeof uiTextZh;
 
 // 图标映射
 const iconMap = {
-  Sparkles, Cpu, HeartPulse, Zap, PenTool, FileText, 
-  Stethoscope, Home, TrendingUp, Shield, CheckCircle2,
-  Users, Target, Lightbulb,
+  Sparkles, Cpu, Zap, FileText, 
+  Home, TrendingUp, Shield, CheckCircle2,
 };
 
-// 优化的动画配置 - 更流畅自然
+// 优化的动画配置
 const fadeInUp = {
-  initial: { opacity: 0, y: 24 },
+  initial: { opacity: 0, y: 32 },
   whileInView: { opacity: 1, y: 0 },
   transition: { 
     duration: 0.8,
-    ease: [0.16, 1, 0.3, 1] as [number, number, number, number] // 自定义缓动函数
+    ease: [0.16, 1, 0.3, 1] as [number, number, number, number]
   },
   viewport: { once: true, margin: "-100px" },
 };
@@ -72,261 +53,144 @@ const fadeInUp = {
 const staggerContainer = {
   animate: {
     transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.1,
+      staggerChildren: 0.12,
+      delayChildren: 0.15,
     },
   },
 };
 
-// 响应式 Section 组件 - 参考 Supima 和 Foundry 的极简大留白设计
+// 响应式 Section 组件
 const Section = memo(({ children, className = "", id }: {
   children: React.ReactNode;
   className?: string;
   id?: string;
 }) => (
-  <section id={id} className={`py-16 sm:py-20 md:py-28 lg:py-36 xl:py-48 px-4 sm:px-6 md:px-8 lg:px-12 ${className}`}>
-    <div className="container mx-auto max-w-5xl">
+  <section id={id} className={`min-h-screen flex items-center justify-center py-20 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8 lg:px-12 ${className}`}>
+    <div className="container mx-auto max-w-7xl w-full">
       {children}
     </div>
   </section>
 ));
 Section.displayName = "Section";
 
-// Logo 组件 - 使用真实的 SCXSL logo 图片，移动端优化
-const SCXSLLogo = memo(({ className = "w-12 h-12" }: { className?: string }) => (
-  <div className={className}>
-    <Image
-      src="/scxsl-logo.png"
-      alt="SCXSL Logo"
-      width={48}
-      height={48}
-      className="w-full h-full object-contain"
-      priority
-      sizes="(max-width: 768px) 40px, 48px"
-      loading="eager"
-    />
-  </div>
-));
-SCXSLLogo.displayName = "SCXSLLogo";
-
-// 导航栏组件
-const Navigation = memo(({ uiText }: { uiText: UIText }) => {
-  const [isOpen, setIsOpen] = useState(false);
+// 语言切换按钮组件
+const LanguageToggle = memo(({ uiText }: { uiText: UIText }) => {
   const { language, toggleLanguage } = useLanguage();
 
-  const navItems = [
-    { label: uiText.navigation.home, href: "#home" },
-    { label: uiText.navigation.about, href: "#about" },
-    { label: uiText.navigation.team, href: "#team" },
-    { label: uiText.navigation.services, href: "#services" },
-    { label: uiText.navigation.cases, href: "#cases" },
-    { label: uiText.navigation.contact, href: "#contact" },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 transition-all duration-300">
-      <div className="container mx-auto max-w-5xl px-4 md:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo - 参考 Supima 和 Foundry 的极简设计 */}
-          <a 
-            href="#home" 
-            className="flex items-center space-x-2 md:space-x-3 group focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2 rounded"
-            aria-label="返回首页"
-          >
-            <SCXSLLogo className="w-8 h-8 md:w-10 md:h-10 transition-opacity duration-300 group-hover:opacity-70" />
-            <span className="text-lg md:text-xl font-light tracking-tight text-black">
-              New Shi Long
-            </span>
-          </a>
-
-          {/* Desktop Navigation - 参考 Supima 和 Foundry 的极简设计 */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-xs md:text-sm font-light text-gray-700 hover:text-black transition-colors tracking-wider uppercase focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2 rounded"
-              >
-                {item.label}
-              </a>
-            ))}
-            {/* Language Toggle */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center space-x-1 text-xs md:text-sm font-light text-gray-700 hover:text-black transition-colors focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2 rounded px-2 py-1"
-              title={uiText.navigation.switchLanguage}
-              aria-label={uiText.navigation.switchLanguage}
-            >
-              <Languages className="w-3.5 h-3.5" />
-              <span className="text-xs tracking-wider">{language === 'zh' ? 'EN' : '中文'}</span>
-            </button>
-          <Button className="cta-button px-5 py-2 text-xs md:text-sm tracking-wider uppercase" asChild>
-            <a href={`mailto:uj.zhou@foxmail.com?subject=${encodeURIComponent(language === 'zh' ? '咨询羊肚菌产品,并获取样品' : 'Inquiry about Morel Mushrooms and Request Sample')}`}>
-              {uiText.navigation.requestSample}
-            </a>
-          </Button>
-          </div>
-
-          {/* Mobile Menu Button - 优化触摸区域 */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2.5 rounded-lg hover:bg-gray-100 active:bg-gray-200 transition-colors touch-manipulation focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2"
-            aria-label={isOpen ? "关闭菜单" : "打开菜单"}
-            aria-expanded={isOpen}
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-
-        {/* Mobile Menu - 优化的移动端体验 */}
-        {isOpen && (
-          <>
-            {/* 背景遮罩 - 点击关闭 */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
-              onClick={() => setIsOpen(false)}
-              aria-hidden="true"
-            />
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="md:hidden py-4 border-t border-gray-200 bg-white relative z-50"
-            >
-              {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className="flex items-center py-3.5 text-base text-gray-900 hover:text-black hover:bg-gray-50 rounded-lg px-4 mx-2 mb-1 transition-colors active:bg-gray-100 touch-manipulation min-h-[44px] focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2"
-                >
-                  {item.label}
-                </a>
-              ))}
-              {/* Mobile Language Toggle */}
-              <button
-                onClick={() => {
-                  toggleLanguage();
-                  setIsOpen(false);
-                }}
-                className="flex items-center space-x-2 py-3.5 px-4 text-base text-gray-900 hover:text-black hover:bg-gray-50 rounded-lg transition-colors w-full active:bg-gray-100 touch-manipulation min-h-[44px] mx-2 focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2"
-                aria-label={uiText.navigation.switchLanguage}
-              >
-                <Languages className="w-5 h-5" />
-                <span>{uiText.navigation.switchToEnglish}</span>
-              </button>
-              <Button className="w-full mt-4 mx-2 cta-button min-h-[48px] text-base" asChild>
-                <a href={`mailto:uj.zhou@foxmail.com?subject=${encodeURIComponent(language === 'zh' ? '咨询羊肚菌产品,并获取样品' : 'Inquiry about Morel Mushrooms and Request Sample')}`}>
-                  {uiText.navigation.requestSample}
-                </a>
-              </Button>
-            </motion.div>
-          </>
-        )}
-      </div>
-    </nav>
+    <button
+      onClick={toggleLanguage}
+      className="fixed top-6 right-6 z-50 flex items-center space-x-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:border-accent focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
+      title={uiText.navigation.switchLanguage}
+      aria-label={uiText.navigation.switchLanguage}
+    >
+      <Languages className="w-4 h-4 text-primary" />
+      <span className="text-sm font-medium text-gray-700">{language === 'zh' ? 'EN' : '中文'}</span>
+    </button>
   );
 });
-Navigation.displayName = "Navigation";
+LanguageToggle.displayName = "LanguageToggle";
 
-// Hero Section - 参考 Starter Story 和 getdbt 的社会证明设计
+// 第一屏: Hero Section
 const HeroSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => {
   const { language } = useLanguage();
+  
   return (
-  <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24 lg:pt-32 bg-white">
-    {/* 统计数据横幅 - 参考 Starter Story */}
-    <div className="absolute top-20 md:top-24 left-0 right-0 z-20 bg-gray-50 border-b border-gray-100 py-3 md:py-4">
-      <div className="container mx-auto max-w-6xl px-4">
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-xs md:text-sm">
-          <div className="flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-green-600" />
-            <span className="font-medium text-gray-700">{language === 'zh' ? '1000吨年产能' : '1000 Tons Annual Capacity'}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Shield className="w-4 h-4 text-blue-600" />
-            <span className="font-medium text-gray-700">SC · HACCP · ISO 22000</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <TrendingUp className="w-4 h-4 text-orange-600" />
-            <span className="font-medium text-gray-700">{language === 'zh' ? '三阶段品控体系' : '3-Stage QC System'}</span>
-          </div>
-        </div>
-      </div>
+  <Section className="bg-gradient-to-br from-white via-gray-50 to-white relative overflow-hidden">
+    {/* 背景装饰 */}
+    <div className="absolute inset-0 opacity-5">
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
     </div>
 
-    <div className="relative z-10 container mx-auto max-w-5xl px-4 sm:px-6 md:px-8 lg:px-12 text-center mt-12">
+    <div className="relative z-10 text-center">
       <motion.div {...fadeInUp}>
-        {/* 小标签 */}
-        <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-          {companyData.companyInfo.founded && `${language === 'zh' ? '成立于' : 'Founded in'} ${companyData.companyInfo.founded} · `}{companyData.companyInfo.tagline}
-        </p>
+        {/* 标签 */}
+        <div className="inline-flex items-center space-x-2 mb-8 px-4 py-2 bg-gradient-primary rounded-full">
+          <Sparkles className="w-4 h-4 text-white" />
+          <span className="text-xs font-medium text-white tracking-wider uppercase">{companyData.companyInfo.tagline}</span>
+        </div>
         
         {/* 超大标题 */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extralight mb-8 md:mb-12 lg:mb-16 leading-[0.95] tracking-[-0.02em] text-black">
-          {companyData.companyInfo.slogan}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light mb-8 md:mb-12 leading-[1.1] tracking-tight">
+          <span className="block text-primary font-medium">
+            {companyData.companyInfo.slogan.split('为知识产权全链条')[0]}
+            {language === 'zh' ? '为知识产权全链条' : 'Activating Data Value'}
+          </span>
+          <span className="block text-gray-800 mt-2">
+            {language === 'zh' ? '激活数据价值' : 'for the Entire IP Chain'}
+          </span>
         </h1>
         
         {/* 副标题 */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-8 md:mb-10 max-w-2xl mx-auto font-light leading-[1.6]">
-          {companyData.companyInfo.name}{language === 'zh' ? '专注于' : ' focuses on '}{companyData.companyInfo.focus}
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 md:mb-16 max-w-4xl mx-auto font-light leading-[1.7]">
+          {companyData.companyInfo.subtitle}
         </p>
         
-        {/* 描述文字 */}
-        <p className="text-sm sm:text-base md:text-lg text-gray-500 mb-12 md:mb-16 max-w-xl mx-auto font-light leading-[1.7]">
-          {companyData.aboutUs.mission}
-        </p>
-        
-        {/* CTA 按钮 - 主按钮改为橙色 */}
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+        {/* CTA 按钮 */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
-            className="cta-button px-8 sm:px-10 py-3 sm:py-3.5 text-sm sm:text-base tracking-wider uppercase w-full sm:w-auto min-h-[48px] touch-manipulation" 
+            className="cta-button px-10 py-6 text-base tracking-wide w-full sm:w-auto min-h-[56px]" 
             asChild
           >
-            <a href="#services" aria-label={uiText.hero.learnMore}>
+            <a href="#solutions">
               {uiText.hero.learnMore}
             </a>
           </Button>
           <Button 
             size="lg" 
             variant="outline" 
-            className="secondary-button px-8 sm:px-10 py-3 sm:py-3.5 text-sm sm:text-base tracking-wider uppercase w-full sm:w-auto min-h-[48px] touch-manipulation" 
+            className="secondary-button px-10 py-6 text-base tracking-wide w-full sm:w-auto min-h-[56px]" 
             asChild
           >
-            <a href="#contact" aria-label={uiText.hero.contactUs}>
+            <a href="#contact">
               {uiText.hero.contactUs}
             </a>
           </Button>
         </div>
+
+        {/* 统计数据 */}
+        <div className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          {[
+            { label: language === 'zh' ? '服务客户' : 'Clients', value: '500+' },
+            { label: language === 'zh' ? '数据来源' : 'Data Sources', value: '50+' },
+            { label: language === 'zh' ? '场景应用' : 'Applications', value: '100+' },
+            { label: language === 'zh' ? '客户满意度' : 'Satisfaction', value: '95%' },
+          ].map((stat, index) => (
+            <motion.div 
+              key={index}
+              {...fadeInUp}
+              transition={{ delay: 0.2 + index * 0.1 }}
+              className="text-center"
+            >
+              <div className="text-3xl md:text-4xl font-light text-primary mb-2">{stat.value}</div>
+              <div className="text-sm text-gray-600 font-light">{stat.label}</div>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
     </div>
-    
-    {/* 滚动指示器 */}
-    <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-      <ChevronRight className="w-5 h-5 text-gray-400 rotate-90 animate-bounce" />
-    </div>
-  </section>
+  </Section>
   );
 });
 HeroSection.displayName = "HeroSection";
 
-// Focus Areas Section
-const FocusAreasSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
-  <Section className="bg-white">
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20 lg:mb-24">
+// 第二屏: Solutions Section
+const SolutionsSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
+  <Section id="solutions" className="bg-white">
+    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20">
       <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-        {uiText.focusAreas.badge}
+        {uiText.solutions.badge}
       </p>
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-8 md:mb-12 tracking-[-0.02em] text-black leading-[0.95]">
-        {uiText.focusAreas.title}<span className="text-black">{uiText.focusAreas.titleHighlight}</span>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-6 md:mb-8 tracking-tight text-gray-900 leading-[1.2]">
+        {uiText.solutions.title.split(',')[0]}
       </h2>
-      <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-light leading-[1.7]">
-        {uiText.focusAreas.subtitle}
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary mb-8 md:mb-10">
+        {language === 'zh' ? '费用低，实效强' : 'Low cost, strong effectiveness'}
+      </h3>
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto font-light leading-[1.7]">
+        {uiText.solutions.subtitle}
       </p>
     </motion.div>
 
@@ -335,25 +199,29 @@ const FocusAreasSection = memo(({ companyData, uiText }: { companyData: CompanyD
       initial="initial"
       whileInView="animate"
       viewport={{ once: true, margin: "-50px" }}
-      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"
     >
       {companyData.focusAreas.map((area, index) => {
-        const Icon = iconMap[area.icon as keyof typeof iconMap] || Sparkles;
+        const Icon = iconMap[area.icon as keyof typeof iconMap] || Shield;
         return (
           <motion.div key={index} variants={fadeInUp}>
-            <Card className="tech-card group h-full bg-white focus-visible:outline-2 focus-visible:outline-black focus-visible:outline-offset-2 p-6 md:p-8">
+            <Card 
+              className="tech-card group h-full bg-white p-6 md:p-8 hover:shadow-2xl transition-all duration-500"
+              style={{ borderColor: area.color + '40' }}
+            >
               <CardHeader className="pb-6 p-0">
                 <div 
-                  className="w-12 h-12 mb-6 flex items-center justify-center bg-gray-50 rounded-lg transition-all duration-300 group-hover:bg-gray-100"
+                  className="w-16 h-16 mb-6 flex items-center justify-center rounded-2xl transition-all duration-300 group-hover:scale-110"
+                  style={{ backgroundColor: area.color + '15' }}
                 >
-                  <Icon className="w-6 h-6 text-black" />
+                  <Icon className="w-8 h-8" style={{ color: area.color }} />
                 </div>
-                <CardTitle className="text-lg md:text-xl font-medium text-black mb-3 tracking-tight">
+                <CardTitle className="text-xl md:text-2xl font-medium mb-4 tracking-tight" style={{ color: area.color }}>
                   {area.name}
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0">
-                <p className="text-gray-600 leading-[1.7] font-light text-sm md:text-base">{area.description}</p>
+                <p className="text-gray-700 leading-[1.8] font-light text-base">{area.description}</p>
               </CardContent>
             </Card>
           </motion.div>
@@ -362,98 +230,24 @@ const FocusAreasSection = memo(({ companyData, uiText }: { companyData: CompanyD
     </motion.div>
   </Section>
 ));
-FocusAreasSection.displayName = "FocusAreasSection";
+SolutionsSection.displayName = "SolutionsSection";
 
-// About Section - 参考 Supima 的极简设计
-const AboutSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
-  <Section id="about" className="bg-white">
-    <div className="max-w-4xl mx-auto">
-      <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20">
-        <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-          {uiText.about.badge}
-        </p>
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-12 md:mb-16 tracking-[-0.02em] text-black leading-[0.95]">
-          {uiText.about.title}<span className="text-black">{companyData.companyInfo.focus}</span>
-        </h2>
-        <div className="space-y-6 md:space-y-8 text-gray-600 leading-[1.7] text-left text-base md:text-lg font-light">
-          {companyData.aboutUs.intro.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-        
-        <div className="mt-16 md:mt-20 space-y-10 md:space-y-12">
-          <div className="flex items-start space-x-6 text-left">
-            <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-            <div>
-              <h4 className="font-light text-black mb-3 text-base md:text-lg tracking-tight">{uiText.about.coreGoal}</h4>
-              <p className="text-gray-600 font-light text-sm md:text-base leading-[1.7]">{companyData.aboutUs.mission}</p>
-            </div>
-          </div>
-          <div className="flex items-start space-x-6 text-left">
-            <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-            <div>
-              <h4 className="font-light text-black mb-3 text-base md:text-lg tracking-tight">{uiText.about.vision}</h4>
-              <p className="text-gray-600 font-light text-sm md:text-base leading-[1.7]">{companyData.aboutUs.vision}</p>
-            </div>
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  </Section>
-));
-AboutSection.displayName = "AboutSection";
-
-// Stats Section - 参考 getdbt 的大数字展示
-const StatsSection = memo(({ language }: { language: 'zh' | 'en' }) => (
+// 第三屏: Data System Section
+const DataSystemSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
   <Section className="bg-gradient-to-br from-gray-50 to-white">
-    <motion.div {...fadeInUp} className="text-center mb-12 md:mb-16">
-      <p className="mb-4 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-        {language === 'zh' ? '值得信赖的数字' : 'Trusted Numbers'}
-      </p>
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extralight mb-6 tracking-[-0.02em] text-black">
-        {language === 'zh' ? '品质与规模的完美结合' : 'Quality Meets Scale'}
-      </h2>
-    </motion.div>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-      <motion.div {...fadeInUp} transition={{ delay: 0.1 }} className="text-center">
-        <div className="stat-number mb-2">1000</div>
-        <h3 className="text-lg md:text-xl font-medium text-black mb-2">{language === 'zh' ? '吨年产能' : 'Tons Annual Capacity'}</h3>
-        <p className="text-sm text-gray-600 font-light">{language === 'zh' ? '稳定供应全球市场' : 'Stable global supply'}</p>
-      </motion.div>
-      
-      <motion.div {...fadeInUp} transition={{ delay: 0.2 }} className="text-center">
-        <div className="stat-number mb-2">3</div>
-        <h3 className="text-lg md:text-xl font-medium text-black mb-2">{language === 'zh' ? '阶段品控' : 'Stage QC System'}</h3>
-        <p className="text-sm text-gray-600 font-light">{language === 'zh' ? '创新三阶段质量控制' : 'Innovative 3-stage quality control'}</p>
-      </motion.div>
-      
-      <motion.div {...fadeInUp} transition={{ delay: 0.3 }} className="text-center">
-        <div className="stat-number mb-2">3</div>
-        <h3 className="text-lg md:text-xl font-medium text-black mb-2">{language === 'zh' ? '国际认证' : 'International Certifications'}</h3>
-        <p className="text-sm text-gray-600 font-light">SC · HACCP · ISO 22000</p>
-      </motion.div>
-      
-      <motion.div {...fadeInUp} transition={{ delay: 0.4 }} className="text-center">
-        <div className="stat-number mb-2">100%</div>
-        <h3 className="text-lg md:text-xl font-medium text-black mb-2">{language === 'zh' ? '可追溯性' : 'Traceability'}</h3>
-        <p className="text-sm text-gray-600 font-light">{language === 'zh' ? '全程透明，品质保证' : 'Full transparency, quality guaranteed'}</p>
-      </motion.div>
-    </div>
-  </Section>
-));
-StatsSection.displayName = "StatsSection";
-
-// Core Advantages Section - 参考 Foundry 的极简设计
-const AdvantagesSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
-  <Section id="services" className="bg-white">
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20 lg:mb-24">
+    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20">
       <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-        {uiText.advantages.badge}
+        {uiText.dataSystem.badge}
       </p>
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-8 md:mb-12 tracking-[-0.02em] text-black leading-[0.95]">
-        {uiText.advantages.title}<span className="text-black">{uiText.advantages.titleHighlight}</span>
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-6 md:mb-8 tracking-tight text-gray-900 leading-[1.2]">
+        {uiText.dataSystem.title}
       </h2>
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-secondary mb-8 md:mb-10">
+        {uiText.dataSystem.titleHighlight}
+      </h3>
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto font-light leading-[1.7]">
+        {uiText.dataSystem.subtitle}
+      </p>
     </motion.div>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -463,22 +257,24 @@ const AdvantagesSection = memo(({ companyData, uiText }: { companyData: CompanyD
           <motion.div
             key={index}
             {...fadeInUp}
-            transition={{ delay: index * 0.1 }}
+            transition={{ delay: index * 0.15 }}
           >
-            <Card className="tech-card h-full bg-white p-6 md:p-8">
+            <Card className="tech-card h-full bg-white p-8 md:p-10 hover:shadow-2xl transition-all duration-500">
               <CardHeader className="p-0 mb-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 flex items-center justify-center flex-shrink-0 bg-gray-50 rounded-lg">
-                    <Icon className="w-5 h-5 text-black" />
+                <div className="flex items-start space-x-5">
+                  <div className="w-14 h-14 flex items-center justify-center flex-shrink-0 bg-gradient-primary rounded-2xl shadow-lg">
+                    <Icon className="w-7 h-7 text-white" />
                   </div>
-                  <CardTitle className="text-xl md:text-2xl font-medium text-black tracking-tight">{advantage.title}</CardTitle>
+                  <CardTitle className="text-2xl md:text-3xl font-medium text-gray-900 tracking-tight leading-tight pt-2">
+                    {advantage.title}
+                  </CardTitle>
                 </div>
               </CardHeader>
               <CardContent className="p-0">
-                <p className="text-gray-600 leading-[1.7] mb-6 font-light text-sm md:text-base">{advantage.description}</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="text-gray-600 leading-[1.8] mb-6 font-light text-base md:text-lg">{advantage.description}</p>
+                <div className="flex flex-wrap gap-3">
                   {advantage.highlights.map((highlight, idx) => (
-                    <span key={idx} className="stat-badge">
+                    <span key={idx} className="stat-badge text-xs">
                       {highlight}
                     </span>
                   ))}
@@ -491,317 +287,166 @@ const AdvantagesSection = memo(({ companyData, uiText }: { companyData: CompanyD
     </div>
   </Section>
 ));
-AdvantagesSection.displayName = "AdvantagesSection";
+DataSystemSection.displayName = "DataSystemSection";
 
-// Team Section - 参考 Supima 的极简团队展示
-const TeamSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
-  <Section id="team" className="bg-white">
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20 lg:mb-24">
-      <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-        {uiText.team.badge}
-      </p>
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-8 md:mb-12 tracking-[-0.02em] text-black leading-[0.95]">
-        {uiText.team.title}<span className="text-black">{uiText.team.titleHighlight}</span>
-      </h2>
-      <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-light leading-[1.7]">
-        {companyData.team.intro}
-      </p>
-    </motion.div>
-
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-      {companyData.team.leadership.map((member, index) => (
-        <motion.div
-          key={index}
-          {...fadeInUp}
-          transition={{ delay: index * 0.1 }}
-        >
-          <Card className="tech-card group text-center h-full bg-white border border-gray-200">
-            <CardHeader>
-              <div className="w-24 h-24 mx-auto mb-6 flex items-center justify-center">
-                <Users className="w-12 h-12 text-black" />
-              </div>
-              <CardTitle className="text-lg font-normal mb-2 text-black">{member.name}</CardTitle>
-              <CardDescription className="text-gray-600 font-light text-sm">
-                {member.title}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-xs text-gray-600 mb-4 leading-relaxed font-light">{member.background}</p>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {member.expertise.slice(0, 3).map((skill, idx) => (
-                  <Badge key={idx} variant="outline" className="text-xs font-light border-gray-300 text-gray-600">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
-      ))}
-    </div>
-  </Section>
-));
-TeamSection.displayName = "TeamSection";
-
-// Case Studies Section - 参考 Foundry 的极简案例展示
-const CaseStudiesSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
-  <Section id="cases" className="bg-white">
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20 lg:mb-24">
-      <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-        {uiText.cases.badge}
-      </p>
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-8 md:mb-12 tracking-[-0.02em] text-black leading-[0.95]">
-        <span className="text-black">{uiText.cases.title}</span>{uiText.cases.titleHighlight}
-      </h2>
-      <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-light leading-[1.7]">
-        {uiText.cases.subtitle}
-      </p>
-    </motion.div>
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-      {companyData.caseStudies.map((caseStudy, index) => {
-        return (
-          <motion.div
-            key={caseStudy.id}
-            {...fadeInUp}
-            transition={{ delay: index * 0.1 }}
-          >
-            <Card className="tech-card group h-full overflow-hidden bg-white p-6 md:p-8">
-              <CardHeader className="p-0 mb-6">
-                <div className="mb-6">
-                  <span className="stat-badge mb-3 inline-block">
-                    {caseStudy.category}
-                  </span>
-                  <CardTitle className="text-xl md:text-2xl font-medium mb-3 text-black tracking-tight">
-                    {caseStudy.title}
-                  </CardTitle>
-                  <CardDescription className="text-gray-600 text-sm md:text-base font-light leading-[1.7]">
-                    {caseStudy.subtitle}
-                  </CardDescription>
-                </div>
-              </CardHeader>
-
-              <CardContent className="space-y-6 p-0">
-                {/* Technologies */}
-                <div>
-                  <h4 className="font-light text-xs text-gray-500 mb-3 tracking-wider uppercase">{uiText.cases.technologies}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {caseStudy.technologies.map((tech, idx) => (
-                      <span key={idx} className="stat-badge">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Pain Point (if exists) */}
-                {caseStudy.painPoint && (
-                  <div className="border-l-2 border-gray-200 pl-4">
-                    <p className="text-sm text-gray-600 font-light leading-[1.7]">
-                      <span className="font-light text-gray-500">{uiText.cases.painPoint}</span> {caseStudy.painPoint}
-                    </p>
-                  </div>
-                )}
-
-                {/* Features */}
-                <div>
-                  <h4 className="font-light text-xs text-gray-500 mb-3 tracking-wider uppercase">{uiText.cases.features}</h4>
-                  <Accordion type="single" collapsible>
-                    {caseStudy.features.map((feature, idx) => (
-                      <AccordionItem key={idx} value={`feature-${idx}`} className="border-0">
-                        <AccordionTrigger className="text-sm font-light text-black hover:no-underline">
-                          {feature.name}
-                        </AccordionTrigger>
-                        <AccordionContent className="text-sm text-gray-600 leading-[1.7] font-light">
-                          {feature.description}
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </div>
-
-                {/* Outcome */}
-                <div className="border-l-2 border-black pl-4">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-light text-sm text-black mb-2 tracking-tight">{uiText.cases.outcome}</h4>
-                      <p className="text-sm text-gray-600 leading-[1.7] font-light">{caseStudy.outcome}</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
-        );
-      })}
-    </div>
-  </Section>
-));
-CaseStudiesSection.displayName = "CaseStudiesSection";
-
-// Contact Section
-const ContactSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => {
+// 第四屏: Testimonials & Contact Section  
+const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => {
   const { language } = useLanguage();
   
+  const testimonials = [
+    {
+      company: "万商天勤",
+      content: language === 'zh' 
+        ? "知象数据实际上为我们节省了成本，并提供了更精准的客户开发商机；" 
+        : "Zhixiang Data has actually saved us costs and provided more precise customer development opportunities;",
+      icon: "Shield"
+    },
+    {
+      company: "首捷集团",
+      content: language === 'zh'
+        ? "借由知象数据我们首次将业务覆盖到海外多个国家，并取得了不错的效果；"
+        : "Through Zhixiang Data, we expanded our business to multiple overseas countries for the first time with good results;",
+      icon: "TrendingUp"
+    },
+    {
+      company: "交子金控",
+      content: language === 'zh'
+        ? "知象数据首次让我们见识到了数据驱动业务的可行性；"
+        : "Zhixiang Data showed us the feasibility of data-driven business for the first time;",
+      icon: "CheckCircle2"
+    }
+  ];
+
   return (
   <Section id="contact" className="bg-white">
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20 lg:mb-24">
-      <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
-        {uiText.contact.badge}
-      </p>
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extralight mb-8 md:mb-12 tracking-[-0.02em] text-black leading-[0.95]">
-        {uiText.contact.title}<span className="text-black">{uiText.contact.titleHighlight}</span>{uiText.contact.titleSuffix}
-      </h2>
-      <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto font-light leading-[1.7]">
-        {uiText.contact.subtitle}
-      </p>
-    </motion.div>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+      {/* 左侧: 客户见证 */}
+      <motion.div {...fadeInUp}>
+        <p className="mb-4 text-gray-500 font-light text-xs tracking-[0.15em] uppercase">
+          {uiText.testimonials.badge}
+        </p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6 tracking-tight text-gray-900 leading-[1.2]">
+          {uiText.testimonials.title}
+        </h2>
+        <p className="text-lg text-secondary font-medium mb-8">
+          {uiText.testimonials.titleHighlight}
+        </p>
+        <p className="text-base text-gray-600 mb-12 font-light leading-[1.8]">
+          {uiText.testimonials.subtitle}
+        </p>
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-      {/* Contact Info */}
-      <motion.div {...fadeInUp} className="space-y-6">
-        <div className="space-y-8">
-          <div className="flex items-start space-x-4">
-            <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-            <div>
-              <h4 className="font-light text-xs text-gray-500 mb-2 tracking-wider uppercase">{uiText.contact.phoneLabel}</h4>
-              <a href={`tel:${companyData.contact.phone}`} className="text-black hover:text-gray-600 font-light text-base md:text-lg transition-colors">
-                {companyData.contact.phone}
-              </a>
-              <p className="text-xs text-gray-500 mt-1 font-light">{companyData.contact.workingHours}</p>
-            </div>
-          </div>
+        <div className="space-y-6">
+          {testimonials.map((testimonial, index) => (
+            <motion.div
+              key={index}
+              {...fadeInUp}
+              transition={{ delay: index * 0.15 }}
+              className="relative pl-6 border-l-4 border-primary py-2"
+            >
+              <Quote className="absolute -left-2 top-0 w-8 h-8 text-accent opacity-20" />
+              <p className="text-gray-700 italic mb-3 leading-[1.8] text-base">{testimonial.content}</p>
+              <p className="text-sm font-medium text-primary">— {testimonial.company}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
 
-          <div className="flex items-start space-x-4">
-            <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
+      {/* 右侧: 联系表单 */}
+      <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
+        <p className="mb-4 text-gray-500 font-light text-xs tracking-[0.15em] uppercase">
+          {uiText.contact.badge}
+        </p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6 tracking-tight text-gray-900 leading-[1.2]">
+          {uiText.contact.title}
+        </h2>
+        <p className="text-lg text-accent font-medium mb-8">
+          {uiText.contact.titleHighlight}
+        </p>
+        <p className="text-base text-gray-600 mb-12 font-light leading-[1.8]">
+          {uiText.contact.subtitle}
+        </p>
+
+        {/* 联系卡片 */}
+        <Card className="bg-gradient-to-br from-primary via-secondary to-accent text-white p-10 border-0 shadow-2xl">
+          <CardContent className="p-0 space-y-8">
             <div>
-              <h4 className="font-light text-xs text-gray-500 mb-2 tracking-wider uppercase">{uiText.contact.emailLabel}</h4>
-              <a href={`mailto:${companyData.contact.email}?subject=${encodeURIComponent(language === 'zh' ? '咨询羊肚菌产品' : 'Inquiry about Morel Mushrooms')}`} className="text-black hover:text-gray-600 font-light text-base md:text-lg transition-colors">
+              <h3 className="text-sm font-light mb-3 tracking-wider uppercase opacity-90">
+                {uiText.contact.emailLabel}
+              </h3>
+              <a 
+                href={`mailto:${companyData.contact.email}`} 
+                className="text-xl font-light hover:text-accent-hover transition-colors"
+              >
                 {companyData.contact.email}
               </a>
             </div>
-          </div>
 
-          <div className="flex items-start space-x-4">
-            <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
             <div>
-              <h4 className="font-light text-xs text-gray-500 mb-2 tracking-wider uppercase">{uiText.contact.addressLabel}</h4>
-              <p className="text-gray-600 text-sm md:text-base font-light leading-[1.7]">
+              <h3 className="text-sm font-light mb-3 tracking-wider uppercase opacity-90">
+                {uiText.contact.phoneLabel}
+              </h3>
+              <a 
+                href={`tel:${companyData.contact.phone}`} 
+                className="text-xl font-light hover:text-accent-hover transition-colors"
+              >
+                {companyData.contact.phone}
+              </a>
+              <p className="text-sm mt-2 opacity-80">{companyData.contact.workingHours}</p>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-light mb-3 tracking-wider uppercase opacity-90">
+                {uiText.contact.addressLabel}
+              </h3>
+              <p className="text-base font-light leading-relaxed opacity-90">
                 {companyData.contact.address}
               </p>
             </div>
-          </div>
-        </div>
 
-        <div className="bg-black text-white p-8 md:p-12">
-          <h3 className="text-xl md:text-2xl font-light mb-4 tracking-tight">{companyData.companyInfo.slogan}</h3>
-          <p className="mb-8 opacity-80 text-sm md:text-base font-light leading-[1.7]">
-            {companyData.aboutUs.vision}
-          </p>
-          <Button size="lg" className="w-full cta-button px-8 py-3 text-sm tracking-wider uppercase" asChild>
-            <a href={`mailto:${companyData.contact.email}?subject=${encodeURIComponent(language === 'zh' ? '咨询羊肚菌产品与合作' : 'Inquiry about Morel Mushrooms & Cooperation')}`}>
-              {uiText.contact.cta}
-            </a>
-          </Button>
-        </div>
-      </motion.div>
+            <div className="pt-6">
+              <Button 
+                size="lg" 
+                className="w-full bg-white text-primary hover:bg-gray-100 border-0 shadow-lg px-8 py-6 text-base font-semibold tracking-wide min-h-[56px]"
+                asChild
+              >
+                <a href={`mailto:${companyData.contact.email}?subject=${encodeURIComponent(language === 'zh' ? '咨询知象数据服务' : 'Inquiry about Zhixiang Data Services')}`} className="flex items-center justify-center space-x-2">
+                  <MessageCircle className="w-5 h-5" />
+                  <span>{uiText.contact.cta}</span>
+                </a>
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
 
-      {/* Company Values */}
-      <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
-        <h3 className="text-lg md:text-xl font-light mb-8 tracking-tight">{uiText.contact.values}</h3>
-        <div className="space-y-6">
-          {companyData.aboutUs.values.map((value, index) => (
-            <div key={index} className="flex items-start space-x-4">
-              <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-              <h4 className="text-base md:text-lg font-light text-black leading-[1.7]">{value}</h4>
+        {/* 服务列表 */}
+        <div className="mt-10 space-y-4">
+          {companyData.contact.services.map((service, index) => (
+            <div key={index} className="flex items-start space-x-3">
+              <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+              <span className="text-sm text-gray-600 font-light leading-relaxed">{service}</span>
             </div>
           ))}
         </div>
-
-        <div className="mt-10 border-t border-gray-200 pt-8">
-          <h4 className="font-light text-sm text-gray-500 mb-6 tracking-wider uppercase">{uiText.contact.advisors}</h4>
-          <div className="space-y-3">
-            <div className="flex items-start space-x-3">
-              <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-              <span className="text-sm text-gray-600 font-light leading-[1.7]">{companyData.team.teamSize.advisors.medical}</span>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-              <span className="text-sm text-gray-600 font-light leading-[1.7]">{companyData.team.teamSize.advisors.power}</span>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-1 h-1 bg-black rounded-full mt-2 flex-shrink-0" />
-              <span className="text-sm text-gray-600 font-light leading-[1.7]">{companyData.team.teamSize.advisors.design}</span>
-            </div>
-          </div>
-        </div>
       </motion.div>
     </div>
+
+    {/* Footer */}
+    <motion.div 
+      {...fadeInUp} 
+      transition={{ delay: 0.4 }}
+      className="mt-20 pt-10 border-t border-gray-200 text-center"
+    >
+      <p className="text-sm text-gray-500 font-light">
+        © {new Date().getFullYear()} {companyData.companyInfo.name}. {language === 'zh' ? '版权所有' : 'All rights reserved.'}
+      </p>
+      <p className="text-xs text-gray-400 mt-2 font-light">
+        {language === 'zh' ? '成立于' : 'Founded in'} {companyData.companyInfo.founded} · {language === 'zh' ? '专注于知识产权数据服务' : 'Focus on IP Data Services'}
+      </p>
+    </motion.div>
   </Section>
   );
 });
-ContactSection.displayName = "ContactSection";
-
-// Footer - 参考 Supima 和 Foundry 的极简 Footer
-const Footer = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
-  <footer className="bg-white border-t border-gray-100 py-12 md:py-16">
-    <div className="container mx-auto max-w-5xl px-4 md:px-6 lg:px-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-10 md:mb-12">
-        <div>
-          <div className="flex items-center space-x-2 mb-4">
-            <Image
-              src="/scxsl-logo.png"
-              alt="New Shi Long Logo"
-              width={32}
-              height={32}
-              className="object-contain"
-            />
-            <span className="text-base font-light tracking-tight text-black">New Shi Long</span>
-          </div>
-          <p className="text-gray-500 text-xs md:text-sm font-light leading-[1.7]">
-            {companyData.companyInfo.slogan}
-          </p>
-        </div>
-
-        <div>
-          <h4 className="font-light text-xs text-gray-500 mb-4 tracking-wider uppercase">{uiText.footer.quickLinks}</h4>
-          <ul className="space-y-2 text-sm text-gray-600">
-            <li><a href="#about" className="hover:text-black transition-colors font-light">{uiText.footer.about}</a></li>
-            <li><a href="#team" className="hover:text-black transition-colors font-light">{uiText.footer.team}</a></li>
-            <li><a href="#services" className="hover:text-black transition-colors font-light">{uiText.footer.services}</a></li>
-            <li><a href="#cases" className="hover:text-black transition-colors font-light">{uiText.footer.cases}</a></li>
-            <li><a href="#contact" className="hover:text-black transition-colors font-light">{uiText.footer.contact}</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-light text-xs text-gray-500 mb-4 tracking-wider uppercase">{uiText.footer.contactInfo}</h4>
-          <ul className="space-y-2 text-sm text-gray-600">
-            <li className="flex items-center space-x-2 font-light">
-              <Phone className="w-3.5 h-3.5" />
-              <span>{companyData.contact.phone}</span>
-            </li>
-            <li className="flex items-center space-x-2 font-light">
-              <Mail className="w-3.5 h-3.5" />
-              <span>{companyData.contact.email}</span>
-            </li>
-            <li className="flex items-start space-x-2 font-light">
-              <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
-              <span>{companyData.contact.addressShort}</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-gray-100 pt-6 md:pt-8 text-center text-xs text-gray-400 font-light">
-        <p>© {new Date().getFullYear()} {companyData.companyInfo.name}. {uiText.footer.allRightsReserved}</p>
-        <p className="mt-1">{uiText.footer.foundedIn} {companyData.companyInfo.founded} · {uiText.footer.focusOn}</p>
-      </div>
-    </div>
-  </footer>
-));
-Footer.displayName = "Footer";
+TestimonialsContactSection.displayName = "TestimonialsContactSection";
 
 // Main Page Component
 export default function HomePage() {
@@ -815,18 +460,12 @@ export default function HomePage() {
   }, [language]);
 
   return (
-    <main className="min-h-screen">
-      <Navigation uiText={uiText} />
+    <main className="min-h-screen bg-white">
+      <LanguageToggle uiText={uiText} />
       <HeroSection companyData={companyData} uiText={uiText} />
-      <StatsSection language={language} />
-      <FocusAreasSection companyData={companyData} uiText={uiText} />
-      <AboutSection companyData={companyData} uiText={uiText} />
-      <AdvantagesSection companyData={companyData} uiText={uiText} />
-      <TeamSection companyData={companyData} uiText={uiText} />
-      <CaseStudiesSection companyData={companyData} uiText={uiText} />
-      <ContactSection companyData={companyData} uiText={uiText} />
-      <Footer companyData={companyData} uiText={uiText} />
+      <SolutionsSection companyData={companyData} uiText={uiText} />
+      <DataSystemSection companyData={companyData} uiText={uiText} />
+      <TestimonialsContactSection companyData={companyData} uiText={uiText} />
     </main>
   );
 }
-

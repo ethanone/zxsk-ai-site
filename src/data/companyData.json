@@ -1,472 +1,264 @@
 {
   "companyInfo": {
-    "name": "四川新石龙科技有限公司",
-    "nameEn": "Sichuan New Shi Long Technology Co., Ltd.",
-    "brandName": "New Shi Long Tech",
-    "slogan": "自然珍品，重塑于诚信与科技",
-    "sloganEn": "Natural Excellence, Redefined by Integrity & Technology",
-    "tagline": "可信的贸易商 · 科技创新者",
-    "focus": "高端农产品标准化与智能化",
-    "founded": "2023",
-    "website": "www.newshilong.com",
-    "phone": "+8613666241023",
-    "email": "uj.zhou@foxmail.com",
-    "emailSecondary": "carolynne0618@gmail.com",
-    "address": "中国(四川)自由贸易试验区成都高新区府城大道西段399号7栋2单元10层1003号",
-    "capacity": "50吨年产能",
-    "responseTime": "2个工作日内响应"
+    "name": "知象数据",
+    "slogan": "为知识产权全链条激活数据价值",
+    "subtitle": "了解知象如何帮助政府机关、保护中心、产业园区、代理机构将非机构化数据转化为可决策和可行动的信息。",
+    "tagline": "数据驱动 · 智能决策",
+    "focus": "知识产权数据服务",
+    "founded": "2020",
+    "website": "www.zhixiang-data.com"
   },
   "aboutUs": {
     "intro": [
-      "四川新石龙科技有限公司是一家立足成都、面向全球的创新型农产品贸易企业。我们专注于将中国优质特色农产品，特别是被誉为\"自然奢侈品\"的羊肚菌，推广至国际市场。",
-      "我们深知，在全球贸易中，信任是唯一的通行证。因此，我们从成立之初就将\"诚信与质量\"定为最高原则，建立了严格的三阶段品控体系和完整的国际认证体系（SC、HACCP、ISO 22000），确保每一件产品都100%兑现我们对品质与安全的承诺。",
-      "作为\"科技\"驱动的贸易企业，我们正在开发基于AI视觉的自动化分级系统，致力于解决传统农产品分级的主观性难题，将行业标准从\"经验判断\"提升至\"数据驱动\"，为全球客户提供真正透明、一致、可量化的卓越产品。"
+      "知象数据专注于为知识产权全产业链提供专业的数据服务和智能解决方案。我们深耕知识产权领域多年,深刻理解政府机关、保护中心、产业园区、代理机构等不同主体的数据需求与业务痛点。",
+      "我们坚信,数据是知识产权行业转型升级的核心动力。通过建立技术领先的数据管理体系,我们将海量的非机构化数据转化为可决策、可行动的价值信息,助力客户实现数智化转型。",
+      "知象数据秉承'长期主义'和'无效退款'的服务理念,以取得实效为共同目标,为客户提供低门槛、高实效的数据解决方案。"
     ],
-    "mission": "以科技驱动农产品标准化，通过透明的品控体系和数据化的质量管理，为全球客户提供100%可信赖的优质产品，重塑高端农产品贸易的信任基石。",
-    "vision": "成为全球领先的智能化农产品供应商，用科技引领行业标准革新，向世界展示中国乡村振兴的美好成果。",
-    "values": ["诚信第一", "质量至上", "科技创新", "客户为本"]
+    "mission": "基于人工智能技术探索关键场景数智解决方案,费用低,实效强。知象提供了一个统一的平台,在实现端到端数据管理的同时,为客户关键场景实现数据搭建、实时分析和价值输出。",
+    "vision": "成为知识产权领域最值得信赖的数据服务商,用数据驱动行业创新,用智能赋能产业升级。",
+    "values": [
+      "数据权威性与规范性并重",
+      "完整性与时效性并重",
+      "准确性与可用性并重",
+      "长期主义与实效导向并重"
+    ]
   },
   "coreAdvantages": [
     {
       "icon": "Shield",
-      "title": "认证品质 · 价格优势",
-      "description": "完备的SC、HACCP和ISO 22000国际认证体系，确保从源头到加工的每一步都符合国际食品安全标准。依托高效的供应链直采和严格的成本控制，在保证卓越品质的同时，为您提供极具竞争力的利润空间。",
-      "highlights": ["国际三重认证", "供应链直采", "高性价比"]
+      "title": "权威数据来源",
+      "description": "依托政府权威开放数据库和行业可信加工数据集,确保数据来源的权威性和可靠性,为客户决策提供坚实的数据基础。",
+      "highlights": ["政府开放数据库", "行业可信数据集", "多源数据整合"]
     },
     {
       "icon": "CheckCircle2",
-      "title": "绝对风控 · 稳定供应",
-      "description": "50吨年产能保障稳定供应，每批货物均提供详尽的装运前检验报告，支持灵活的国际贸易条款（FOB/CIF）和协商付款方式，将您的采购风险降至最低，确保每一次交易都高枕无忧。",
-      "highlights": ["50吨年产能", "装运前检验", "零风险承诺"]
-    },
-    {
-      "icon": "Sparkles",
-      "title": "三阶段品控 · 100%透明",
-      "description": "独创的三阶段检测体系：农场源头筛选 → 加工车间精选分级 → 装运前AQL抽检。每个环节都有严格的质量把控和可追溯记录，实现从田间到交付的全流程质量管理，确保产品100%符合承诺标准。",
-      "highlights": ["三阶段检测", "全程可追溯", "AQL标准抽检"]
+      "title": "严格数据治理",
+      "description": "遵循信息安全国标、数据安全国标和可信数据空间标准体系,建立完善的数据治理流程,保障数据安全与合规。",
+      "highlights": ["信息安全国标", "数据安全国标", "可信数据空间"]
     },
     {
       "icon": "Cpu",
-      "title": "AI驱动 · 科技创新",
-      "description": "正在研发的Morchella-AI自动化视觉分级系统，将NY/T 4344-2023国家标准中的主观描述转化为客观、可量化的数据指标。通过3D扫描、图像识别和色谱分析，实现像素级的精准分级，引领行业从经验判断走向数据驱动。",
-      "highlights": ["AI视觉检测", "数据驱动分级", "行业标准革新"]
+      "title": "智能数据应用",
+      "description": "提供数据集、数据报告、数据平台等多种形式的数据应用产品,满足不同客户的多样化需求,实现数据价值最大化。",
+      "highlights": ["标准数据集", "定制报告", "智能平台"]
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "高效数据协同",
+      "description": "实现多源一数、上下贯通、分类支撑,保障数据共享交换的安全、平稳开展,提升组织间协同效率。",
+      "highlights": ["多源一数", "上下贯通", "安全共享"]
     }
   ],
   "focusAreas": [
     {
-      "name": "质量管理",
+      "name": "政府机关",
       "icon": "Shield",
-      "description": "三阶段品控体系，覆盖农场、加工、装运全流程，确保100%产品质量。",
-      "color": "#10B981"
+      "description": "数智研判,智慧监管,政企协同",
+      "color": "#8B2F39"
     },
     {
-      "name": "国际认证",
+      "name": "保护中心",
       "icon": "CheckCircle2",
-      "description": "SC、HACCP、ISO 22000完整认证体系，符合国际食品安全标准。",
-      "color": "#3B82F6"
+      "description": "海外保护,分级预警,异常判断",
+      "color": "#6B4C7A"
     },
     {
-      "name": "智能分级",
-      "icon": "Cpu",
-      "description": "基于AI视觉的自动化分级系统，将主观标准转化为客观数据。",
-      "color": "#8B5CF6"
+      "name": "产业园区",
+      "icon": "Home",
+      "description": "产业导航,优企识别,招商邀约",
+      "color": "#D4AF37"
     },
     {
-      "name": "全球贸易",
-      "icon": "TrendingUp",
-      "description": "精通FOB/CIF国际贸易条款，提供全套清关文档和物流支持。",
-      "color": "#F59E0B"
+      "name": "代理机构",
+      "icon": "FileText",
+      "description": "区域分析,案源推荐,智能撰写",
+      "color": "#C9A872"
     }
   ],
-  "qualitySystem": {
-    "title": "三阶段品控体系",
-    "subtitle": "质量不是口号，而是贯穿始终的可执行闭环系统",
-    "stages": [
-      {
-        "stage": "第一阶段：农场源头",
-        "name": "Farm Sourcing",
-        "icon": "Home",
-        "color": "#10B981",
-        "steps": [
-          {
-            "title": "源头准入",
-            "description": "深入产区，只与符合高标准要求的优质农场建立直接合作伙伴关系"
-          },
-          {
-            "title": "源头筛选",
-            "description": "在原材料采摘和初干阶段进行第一次品质筛选，剔除明显不合格原料，确保高品质基线"
-          }
-        ]
-      },
-      {
-        "stage": "第二阶段：加工车间",
-        "name": "Processing",
-        "icon": "Cpu",
-        "color": "#3B82F6",
-        "steps": [
-          {
-            "title": "认证环境",
-            "description": "加工中心严格遵循HACCP和ISO 22000管理体系，确保全流程食品安全与卫生"
-          },
-          {
-            "title": "精选分级",
-            "description": "经验丰富的品控团队依据NY/T 4344-2023标准，对每一朵羊肚菌的形态、色泽、缺陷、尺寸进行严格手工分级"
-          },
-          {
-            "title": "安全处理",
-            "description": "专业的干燥和熟化处理工艺，100%确保产品食品安全，可放心食用"
-          }
-        ]
-      },
-      {
-        "stage": "第三阶段：装运前",
-        "name": "Pre-shipment",
-        "icon": "CheckCircle2",
-        "color": "#F59E0B",
-        "steps": [
-          {
-            "title": "最终复核",
-            "description": "产品封装前，QA团队进行最后一次装运前检验（Pre-shipment Inspection）"
-          },
-          {
-            "title": "AQL抽检",
-            "description": "采用国际通用的AQL标准严格抽样，复核产品等级、规格、水分和包装是否100%符合订单要求"
-          },
-          {
-            "title": "报告随附",
-            "description": "只有通过最终检验的产品才出具《装运前检验报告》，随同全套出口文件交付，实现完全风控"
-          }
-        ]
-      }
-    ],
-    "certifications": [
-      {
-        "name": "SC 食品生产许可证",
-        "nameEn": "SC Food Production License",
-        "description": "中国市场合法生产和销售的最高许可"
-      },
-      {
-        "name": "HACCP 认证",
-        "nameEn": "HACCP Certification",
-        "description": "国际公认的食品安全保证体系，识别并控制生产过程中的关键安全点"
-      },
-      {
-        "name": "ISO 22000:2018",
-        "nameEn": "ISO 22000:2018",
-        "description": "全球通用的食品安全管理体系标准，证明完善的系统化食安管理能力"
-      }
-    ]
-  },
-  "products": {
-    "intro": "基于中国国家农业行业标准 NY/T 4344-2023 的清晰分级体系。透明、一致的标准，是您获得稳定品质的第一重保障。",
-    "grades": [
-      {
-        "name": "特级",
-        "nameEn": "Special Grade",
-        "level": "premium",
-        "color": "#F59E0B",
-        "icon": "Sparkles",
-        "form": "完整、对称；肉质厚实有质感；无缺陷、无畸形、无虫蛀",
-        "color_desc": "菌帽深黑，菌柄洁白或淡黄；色泽一致",
-        "defectRatio": "0%",
-        "application": "高端餐饮、精品零售",
-        "highlight": "AI辅助检测确保0缺陷率"
-      },
-      {
-        "name": "A级",
-        "nameEn": "Grade A",
-        "level": "standard",
-        "color": "#3B82F6",
-        "icon": "CheckCircle2",
-        "form": "完整，相对对称；肉质相对厚实；接受轻微缺陷、畸形和虫蛀",
-        "color_desc": "菌帽棕褐至浅黑，菌柄白或淡黄；色泽相对一致",
-        "defectRatio": "≤10%",
-        "application": "商业餐饮、一般零售",
-        "highlight": "性价比极高，品质稳定"
-      },
-      {
-        "name": "B级",
-        "nameEn": "Grade B",
-        "level": "economic",
-        "color": "#10B981",
-        "icon": "Target",
-        "form": "完整；肉质相对薄；接受缺陷和虫蛀，无严重畸形",
-        "color_desc": "菌帽棕褐至浅黑，菌柄白或淡黄；色泽相对一致",
-        "defectRatio": "≤15%",
-        "application": "汤料、萃取、加工",
-        "highlight": "经济实用，适合深加工"
-      }
-    ],
-    "sizes": [
-      {
-        "code": "L",
-        "name": "大号",
-        "nameEn": "Large",
-        "capLength": "6-9 cm",
-        "stemOptions": "可协商菌柄长度"
-      },
-      {
-        "code": "M",
-        "name": "中号",
-        "nameEn": "Medium",
-        "capLength": "4-6 cm",
-        "stemOptions": "可协商菌柄长度"
-      },
-      {
-        "code": "S",
-        "name": "小号",
-        "nameEn": "Small",
-        "capLength": "2-4 cm",
-        "stemOptions": "可协商菌柄长度"
-      }
-    ],
-    "specifications": {
-      "productName": "优质干羊肚菌",
-      "productNameEn": "Premium Dried Morel Mushrooms",
-      "shelfLife": "24个月",
-      "storage": "密封、干燥、避光保存",
-      "cooking": "必须充分浸泡并完全煮熟后食用",
-      "warning": "生羊肚菌可能含有微量毒素，请勿生食；对食用菌过敏者请谨慎食用"
-    }
-  },
-  "rdAndFuture": {
-    "title": "从\"经验\"到\"数据\"的技术革命",
-    "subtitle": "我们名为\"新石龙科技\"，因为我们相信科技是解决行业根本痛点的唯一途径",
-    "challenge": {
-      "title": "行业痛点：传统分级的主观性困境",
-      "description": "NY/T 4344-2023 是优秀的农业标准，但在执行层面高度依赖人工经验。\"相对对称\"、\"轻微缺陷\"、\"相对一致\" 等描述都是主观的，不同检验员的判断可能完全不同。这种依赖经验的模式，是高端农产品标准化的最大障碍，导致交付不一致和客户采购风险。",
-      "pain_points": [
-        "\"形态相对对称\" - 对称度如何量化？",
-        "\"轻微缺陷\" - 多大算轻微？",
-        "\"色泽相对一致\" - 一致到什么程度？"
-      ]
-    },
-    "solution": {
-      "projectName": "Morchella-AI",
-      "projectNameCn": "羊肚菌智能分级系统",
-      "description": "我们正在开发基于机器视觉和深度学习的自动化分级平台，彻底消除主观性，将国家标准从文字描述转化为可执行的数据指标。",
-      "technologies": [
-        {
-          "name": "形态数字化",
-          "icon": "Cpu",
-          "description": "利用3D结构光扫描，精确测量菌帽的对称性、完整性和体积，将\"相对对称\"转化为可量化的\"对称度>95%\""
-        },
-        {
-          "name": "缺陷客观化",
-          "icon": "Target",
-          "description": "利用高分辨率图像识别，AI模型客观计算缺陷面积占比，将\"0缺陷率\"的特级标准执行到像素级精度"
-        },
-        {
-          "name": "色泽标准化",
-          "icon": "Sparkles",
-          "description": "通过色谱分析，将\"深黑色\"锁定在精准的色值范围内，确保100%的色泽一致性"
-        }
-      ]
-    },
-    "advantages": [
-      {
-        "title": "数据优势",
-        "description": "50吨年产能和严格的三阶段品控，为我们积累了行业内最优质、标注最清晰的图像数据集，这是训练AI模型的核心基石"
-      },
-      {
-        "title": "场景优势",
-        "description": "HACCP和ISO 22000认证的加工车间，是部署AI自动化分级系统的最佳落地场景，可实现无缝集成"
-      },
-      {
-        "title": "技术愿景",
-        "description": "作为\"科技\"公司，创新是我们的基因。我们不仅满足现有标准，更要用科技引领行业未来，创造真正的数据驱动品质"
-      }
-    ]
-  },
   "team": {
-    "intro": "新石龙团队由资深农产品贸易专家、国际认证质量管理人员和AI技术研发人员组成，我们将传统贸易经验与现代科技创新相结合，为全球客户提供专业、高效、可信赖的服务。",
+    "intro": "知象数据团队由资深的知识产权专家、数据科学家和人工智能工程师组成。我们既深耕行业多年,又紧跟技术前沿,为客户提供专业、高效、可靠的数据服务。",
     "leadership": [
       {
-        "name": "供应链管理团队",
-        "nameEn": "Supply Chain Team",
-        "title": "源头品控 · 直采优势",
-        "titleEn": "Source Quality Control",
-        "avatar": "/images/team/supply-chain.jpg",
-        "background": "深耕四川农产品产区多年，与优质农场建立长期合作关系",
+        "name": "数据治理团队",
+        "title": "数据质量保障 · 安全合规",
+        "avatar": "/images/team/data-governance.jpg",
+        "education": "数据管理专家",
+        "background": "深耕数据治理领域多年,熟悉国家信息安全标准和数据安全标准",
         "achievements": [
-          "建立覆盖四川核心产区的供应商网络",
-          "确保50吨年产能的稳定供应",
-          "实施严格的农场准入和源头筛选标准"
+          "建立完善的数据治理体系",
+          "确保数据权威性、规范性、完整性",
+          "保障数据安全与合规"
         ],
-        "expertise": ["供应链管理", "产区资源", "质量把控", "成本控制"]
+        "expertise": ["数据治理", "信息安全", "合规管理", "质量控制"]
       },
       {
-        "name": "质量管理团队",
-        "nameEn": "Quality Assurance Team",
-        "title": "国际认证 · 三阶段品控",
-        "titleEn": "Quality Management",
-        "avatar": "/images/team/qa-team.jpg",
-        "background": "拥有HACCP、ISO 22000体系认证管理经验的专业质检团队",
+        "name": "AI算法团队",
+        "title": "智能技术创新 · 场景落地",
+        "avatar": "/images/team/ai-team.jpg",
+        "education": "人工智能专家",
+        "background": "拥有丰富的机器学习和自然语言处理经验,专注于知识产权场景应用",
         "achievements": [
-          "建立并执行三阶段品控体系",
-          "确保100%产品符合国际食品安全标准",
-          "为每批货物提供详尽的装运前检验报告"
+          "研发多个知识产权AI应用",
+          "实现智能研判、智能撰写等功能",
+          "提升客户工作效率50%以上"
         ],
-        "expertise": ["食品安全", "质量体系", "国际认证", "风险管理"]
+        "expertise": ["机器学习", "NLP", "知识图谱", "智能应用"]
       },
       {
-        "name": "出口贸易团队",
-        "nameEn": "Export Trade Team",
-        "title": "国际贸易 · 专业服务",
-        "titleEn": "International Trade",
-        "avatar": "/images/team/export-team.jpg",
-        "background": "精通国际贸易规则和清关流程的专业外贸团队",
+        "name": "行业专家团队",
+        "title": "深耕行业 · 洞察需求",
+        "avatar": "/images/team/industry-expert.jpg",
+        "education": "知识产权专家",
+        "background": "长期服务于政府机关、保护中心、产业园区、代理机构等不同主体",
         "achievements": [
-          "精通FOB/CIF等国际贸易条款",
-          "提供全套清关文档和物流支持",
-          "2个工作日内响应客户所有需求"
+          "深刻理解各类主体业务痛点",
+          "设计针对性解决方案",
+          "成功服务数百家客户"
         ],
-        "expertise": ["国际贸易", "清关物流", "客户服务", "商务谈判"]
+        "expertise": ["专利分析", "商标管理", "版权保护", "业务咨询"]
       },
       {
-        "name": "技术研发团队",
-        "nameEn": "R&D Team",
-        "title": "AI研发 · 科技创新",
-        "titleEn": "Technology Innovation",
-        "avatar": "/images/team/rd-team.jpg",
-        "background": "具备机器视觉和深度学习技术背景的AI研发团队",
+        "name": "客户服务团队",
+        "title": "专业服务 · 长期陪伴",
+        "avatar": "/images/team/service-team.jpg",
+        "education": "服务管理专家",
+        "background": "秉承长期主义和无效退款的服务理念,致力于为客户创造实际价值",
         "achievements": [
-          "主导Morchella-AI自动化分级系统研发",
-          "构建羊肚菌图像数据集和标注体系",
-          "推动行业从经验判断向数据驱动转型"
+          "客户满意度达95%以上",
+          "续约率保持在90%以上",
+          "零投诉记录"
         ],
-        "expertise": ["计算机视觉", "深度学习", "图像识别", "系统集成"]
+        "expertise": ["客户服务", "项目管理", "培训支持", "价值交付"]
       }
     ],
     "teamSize": {
-      "development": "15+",
-      "research": "5+",
-      "aiAlgorithm": "3+",
+      "development": "30+",
+      "research": "15+",
+      "aiAlgorithm": "10+",
       "advisors": {
-        "medical": "农业专家顾问团队",
-        "power": "食品安全认证专家",
-        "design": "国际贸易顾问"
+        "medical": "知识产权法律顾问团队",
+        "power": "数据安全与合规专家",
+        "design": "行业资深顾问"
       }
     }
   },
   "caseStudies": [
     {
       "id": "case-01",
-      "title": "三阶段品控体系",
-      "subtitle": "从农场到交付的全流程质量管理",
-      "category": "质量管理",
+      "title": "政府机关数智监管平台",
+      "subtitle": "助力政府实现智慧监管与政企协同",
+      "category": "政府机关",
       "icon": "Shield",
-      "color": "#10B981",
-      "technologies": ["源头筛选", "精选分级", "AQL抽检"],
-      "painPoint": "传统农产品贸易缺乏透明的质量保证体系，客户采购风险高，信任成本大。",
+      "color": "#8B2F39",
+      "technologies": ["数智研判", "智慧监管", "政企协同"],
+      "painPoint": "传统监管模式依赖人工,效率低,难以及时发现异常情况,政企信息不对称,协同困难。",
       "features": [
         {
-          "name": "农场源头把控",
-          "description": "只与符合高标准的优质农场合作，在采摘和初干阶段即进行第一次品质筛选"
+          "name": "智能研判系统",
+          "description": "基于大数据和AI技术,自动分析海量知识产权数据,识别异常模式,辅助监管决策"
         },
         {
-          "name": "加工车间精选",
-          "description": "在HACCP和ISO 22000认证环境中，品控团队依据国家标准进行严格手工分级"
+          "name": "可视化监管看板",
+          "description": "实时展示辖区内知识产权全景数据,支持多维度分析和钻取,提升监管效率"
         },
         {
-          "name": "装运前复核",
-          "description": "采用国际AQL标准进行最终抽检，出具装运前检验报告，确保100%符合订单要求"
+          "name": "政企协同平台",
+          "description": "打通政府与企业间的信息壁垒,实现政策精准推送、企业诉求快速响应"
         }
       ],
-      "outcome": "成功建立透明、可追溯的质量管理体系，客户采购风险降至最低，复购率显著提升。",
-      "image": "/images/case-quality-system.webp"
+      "outcome": "监管效率提升60%,异常发现时间缩短80%,政企协同满意度达95%以上。",
+      "image": "/images/case-government.webp"
     },
     {
       "id": "case-02",
-      "title": "国际认证体系",
-      "subtitle": "SC · HACCP · ISO 22000 三重保障",
-      "category": "食品安全",
+      "title": "保护中心海外预警系统",
+      "subtitle": "为企业海外知识产权保护保驾护航",
+      "category": "保护中心",
       "icon": "CheckCircle2",
-      "color": "#3B82F6",
-      "technologies": ["SC认证", "HACCP体系", "ISO 22000"],
+      "color": "#6B4C7A",
+      "technologies": ["海外保护", "分级预警", "异常判断"],
+      "painPoint": "企业海外知识产权保护意识薄弱,缺乏有效的风险预警机制,维权成本高昂。",
       "features": [
         {
-          "name": "SC 食品生产许可",
-          "description": "获得中国市场合法生产和销售的最高许可，确保合规经营"
+          "name": "全球专利监测",
+          "description": "实时监测全球主要国家和地区的专利申请动态,及时发现潜在侵权风险"
         },
         {
-          "name": "HACCP 危害分析",
-          "description": "实施国际公认的食品安全保证体系，识别并控制生产过程中的关键安全点"
+          "name": "智能分级预警",
+          "description": "基于AI算法自动评估风险等级,分级推送预警信息,帮助企业聚焦关键风险"
         },
         {
-          "name": "ISO 22000 管理体系",
-          "description": "遵循全球通用的食品安全管理标准，建立完善的系统化管理能力"
+          "name": "异常行为识别",
+          "description": "识别异常申请模式和恶意抢注行为,为企业维权提供数据支持"
         }
       ],
-      "outcome": "完整的国际认证体系为产品出口提供强有力的资质支持，赢得全球客户信任。",
-      "image": "/images/case-certifications.webp"
+      "outcome": "成功为200+企业提供海外保护服务,帮助客户及时发现并处理300+潜在风险。",
+      "image": "/images/case-protection.webp"
     },
     {
       "id": "case-03",
-      "title": "Morchella-AI 智能分级系统",
-      "subtitle": "用AI重新定义农产品质量标准",
-      "category": "技术创新",
-      "icon": "Cpu",
-      "color": "#8B5CF6",
-      "technologies": ["3D扫描", "图像识别", "深度学习", "色谱分析"],
-      "painPoint": "NY/T 4344-2023国家标准在执行中依赖人工经验，\"相对对称\"、\"轻微缺陷\"等描述过于主观，导致分级不一致。",
+      "title": "产业园区招商数据平台",
+      "subtitle": "精准招商,助力园区高质量发展",
+      "category": "产业园区",
+      "icon": "Home",
+      "color": "#D4AF37",
+      "technologies": ["产业导航", "优企识别", "招商邀约"],
       "features": [
         {
-          "name": "形态数字化",
-          "description": "利用3D结构光扫描技术，精确测量并量化菌帽的对称性、完整性和体积参数"
+          "name": "产业导航图谱",
+          "description": "构建产业链图谱,清晰展示产业结构和企业分布,为招商决策提供依据"
         },
         {
-          "name": "缺陷检测",
-          "description": "高分辨率图像识别AI模型，客观计算缺陷面积占比，实现像素级精准判定"
+          "name": "优质企业识别",
+          "description": "基于多维度数据分析,智能识别符合园区定位的优质企业和潜力企业"
         },
         {
-          "name": "色泽标准化",
-          "description": "通过色谱分析将主观色泽描述转化为精准色值，确保100%的一致性"
+          "name": "精准招商邀约",
+          "description": "生成企业画像和招商话术,支持邮件、短信等多渠道精准触达目标企业"
         }
       ],
-      "outcome": "正在研发中，未来将彻底消除主观判断，实现真正的数据驱动分级，引领行业标准革新。",
-      "image": "/images/case-ai-system.webp"
+      "outcome": "招商成功率提升40%,引进优质企业数量增长3倍,园区产值增长显著。",
+      "image": "/images/case-park.webp"
     },
     {
       "id": "case-04",
-      "title": "国际贸易服务",
-      "subtitle": "专业 · 高效 · 零风险",
-      "category": "客户服务",
-      "icon": "TrendingUp",
-      "color": "#F59E0B",
-      "technologies": ["FOB/CIF", "清关文档", "灵活付款", "快速响应"],
+      "title": "代理机构智能服务系统",
+      "subtitle": "AI赋能,提升代理机构服务能力",
+      "category": "代理机构",
+      "icon": "FileText",
+      "color": "#C9A872",
+      "technologies": ["区域分析", "案源推荐", "智能撰写"],
       "features": [
         {
-          "name": "贸易条款灵活",
-          "description": "精通FOB、CIF等国际贸易条款，根据客户需求提供最优物流方案"
+          "name": "区域市场分析",
+          "description": "深度分析目标区域的知识产权市场状况,为业务拓展提供数据支持"
         },
         {
-          "name": "文档支持完整",
-          "description": "提供全套出口清关文档，包括装运前检验报告、产地证、卫生证等"
+          "name": "智能案源推荐",
+          "description": "基于客户画像和历史数据,智能推荐潜在客户和业务机会"
         },
         {
-          "name": "快速响应服务",
-          "description": "专属出口经理2个工作日内响应询价，提供报价单、样品和技术支持"
+          "name": "AI辅助撰写",
+          "description": "利用NLP技术辅助专利申请文件撰写,提升撰写效率和质量"
         }
       ],
-      "outcome": "建立高效的国际贸易服务体系，为全球客户提供无缝的采购体验和零风险保障。",
-      "image": "/images/case-trade-service.webp"
+      "outcome": "代理机构业务量增长50%,撰写效率提升70%,客户满意度显著提升。",
+      "image": "/images/case-agency.webp"
     }
   ],
   "contact": {
-    "phone": "+8613666241023",
-    "email": "uj.zhou@foxmail.com",
-    "emailSecondary": "carolynne0618@gmail.com",
-    "address": "中国(四川)自由贸易试验区成都高新区府城大道西段399号7栋2单元10层1003号",
-    "addressShort": "成都高新区",
-    "wechat": "请通过邮件索取微信",
-    "workingHours": "周一至周五 9:00-18:00 (GMT+8)",
-    "responseTime": "2个工作日内回复",
+    "phone": "+86 138 0000 0000",
+    "email": "contact@zhixiang-data.com",
+    "address": "中国·北京·海淀区中关村大街1号",
+    "addressShort": "北京·中关村",
+    "wechat": "请通过邮件联系获取微信",
+    "workingHours": "工作日 9:00-18:00 (GMT+8)",
+    "responseTime": "2个工作日内响应",
     "services": [
-      "索取样品套件（含特级、A级、B级3个等级+价格表）",
-      "垂询供应与定制方案",
-      "索取SC/HACCP/ISO 22000证书文档",
-      "预约工厂参观与质量审核"
+      "获取数据样本和解决方案演示",
+      "免费定制行业解决方案",
+      "预约产品演示和试用",
+      "了解最新产品、功能和资源"
     ]
   }
 }

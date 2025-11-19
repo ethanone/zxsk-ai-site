@@ -2,61 +2,79 @@
   "navigation": {
     "home": "首页",
     "about": "关于我们",
-    "team": "核心团队",
-    "services": "优势与服务",
-    "cases": "成功案例",
-    "contact": "联系我们",
-    "requestSample": "索取样品",
+    "team": "团队",
+    "services": "服务",
+    "cases": "案例",
+    "contact": "联系",
+    "requestSample": "即时沟通",
     "switchLanguage": "切换语言",
-    "switchToEnglish": "切换为英文"
+    "switchToEnglish": "切换到英文"
   },
   "hero": {
-    "learnMore": "了解更多我们的服务",
-    "contactUs": "联系我们"
+    "learnMore": "了解更多",
+    "contactUs": "即时沟通"
+  },
+  "solutions": {
+    "badge": "关键场景解决方案",
+    "title": "基于人工智能技术探索关键场景数智解决方案",
+    "titleHighlight": "费用低,实效强",
+    "subtitle": "知象提供了一个统一的平台,在实现端到端数据管理的同时,为客户关键场景实现数据搭建、实时分析和价值输出。"
   },
   "focusAreas": {
-    "badge": "核心服务板块",
+    "badge": "核心服务领域",
     "title": "我们的",
-    "titleHighlight": "焦点领域",
-    "subtitle": "致力于为以下关键领域提供精准的智能化解决方案，应对其工作中的实际需求和挑战"
+    "titleHighlight": "专注领域",
+    "subtitle": "致力于为以下关键领域提供精准的智能解决方案,解决工作中的实际需求和挑战"
+  },
+  "dataSystem": {
+    "badge": "数据管理体系",
+    "title": "搭建技术领先的数据管理体系",
+    "titleHighlight": "兼具数据规模和可靠性",
+    "subtitle": "满足客户关于数据权威性、规范性、完整性、时效性、准确性和可用性的基本要求。"
   },
   "about": {
-    "badge": "关于新石龙",
-    "title": "专注",
-    "titleHighlight": "高端农产品标准化与智能化",
-    "coreGoal": "核心目标",
-    "vision": "企业愿景"
+    "badge": "关于知象",
+    "title": "专注于",
+    "titleHighlight": "知识产权数据服务",
+    "coreGoal": "核心使命",
+    "vision": "愿景"
   },
   "advantages": {
     "badge": "核心竞争力",
     "title": "为什么选择",
-    "titleHighlight": "新石龙"
+    "titleHighlight": "知象数据"
   },
   "team": {
     "badge": "核心团队",
     "title": "认识我们的",
     "titleHighlight": "专家团队"
   },
+  "testimonials": {
+    "badge": "客户见证",
+    "title": "加入使用知象数据的大客户服务群",
+    "titleHighlight": "合作形式灵活,使用门槛低",
+    "subtitle": "我们很自豪的向客户展示我们长期主义和无效退款的价值观,取得实效是我们共同的目标。"
+  },
   "cases": {
     "badge": "成功案例",
-    "title": "真实场景",
-    "titleHighlight": "的智能化落地",
-    "subtitle": "深度融合 AI 技术与行业知识，为客户创造切实的商业价值",
+    "title": "智能落地的",
+    "titleHighlight": "真实场景",
+    "subtitle": "AI技术与行业知识深度融合,为客户创造实实在在的业务价值",
     "technologies": "核心技术",
-    "painPoint": "痛点：",
+    "painPoint": "痛点: ",
     "features": "核心功能",
     "outcome": "项目成果"
   },
   "contact": {
     "badge": "联系我们",
-    "title": "开启您的",
-    "titleHighlight": "智能化转型",
-    "titleSuffix": "之旅",
-    "subtitle": "期待与各行各业深度融合，协作走向新的未来",
-    "phoneLabel": "联系电话",
-    "emailLabel": "电子邮箱",
-    "addressLabel": "公司地址",
-    "cta": "立即咨询",
+    "title": "与我们的大客户服务专家取得联系",
+    "titleHighlight": "从好的服务开始",
+    "titleSuffix": "",
+    "subtitle": "获取样本,免费定制你的解决方案,并成为率先了解我们的新产品、新功能和新资源的人。",
+    "phoneLabel": "电话",
+    "emailLabel": "邮箱",
+    "addressLabel": "地址",
+    "cta": "即时沟通",
     "values": "我们的核心价值观",
     "advisors": "行业专家顾问"
   },
@@ -65,12 +83,11 @@
     "contactInfo": "联系方式",
     "about": "关于我们",
     "team": "核心团队",
-    "services": "服务领域",
+    "services": "服务",
     "cases": "成功案例",
     "contact": "联系我们",
-    "allRightsReserved": "保留所有权利。",
+    "allRightsReserved": "版权所有",
     "foundedIn": "成立于",
-    "focusOn": "专注自然珍品"
+    "focusOn": "专注于知识产权数据服务"
   }
 }
-

@@ -1,8 +1,8 @@
 {
-  "name": "scysx-ai-site",
-  "version": "2.0.0",
+  "name": "zxsk-ai-site",
+  "version": "3.0.0",
   "private": true,
-  "description": "新石龙科技 (New Shi Long Tech) - 优质羊肚菌全球贸易商 | Premium Morel Mushrooms International Trade",
+  "description": "知象数据 (Zhixiang Data) - 为知识产权全链条激活数据价值 | Activating Data Value for the Entire IP Chain",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
