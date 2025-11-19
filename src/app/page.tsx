@@ -1,6 +1,7 @@
 "use client";
 
 import { memo, useState, useEffect } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import {
@@ -72,20 +73,35 @@ const Section = memo(({ children, className = "", id }: {
 ));
 Section.displayName = "Section";
 
+// Logo 组件 - 左上角
+const LogoComponent = memo(() => (
+  <div className="fixed top-6 left-6 z-50">
+    <Image
+      src="/logo.png"
+      alt="知象数据 Logo"
+      width={120}
+      height={40}
+      className="object-contain"
+      priority
+    />
+  </div>
+));
+LogoComponent.displayName = "LogoComponent";
+
 // 语言切换按钮组件
 const LanguageToggle = memo(({ uiText }: { uiText: UIText }) => {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-            <button
-              onClick={toggleLanguage}
+    <button
+      onClick={toggleLanguage}
       className="fixed top-6 right-6 z-50 flex items-center space-x-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:border-accent focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
-              title={uiText.navigation.switchLanguage}
-              aria-label={uiText.navigation.switchLanguage}
-            >
+      title={uiText.navigation.switchLanguage}
+      aria-label={uiText.navigation.switchLanguage}
+    >
       <Languages className="w-4 h-4 text-primary" />
       <span className="text-sm font-medium text-gray-700">{language === 'zh' ? 'EN' : '中文'}</span>
-              </button>
+    </button>
   );
 });
 LanguageToggle.displayName = "LanguageToggle";
@@ -464,6 +480,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-white">
+      <LogoComponent />
       <LanguageToggle uiText={uiText} />
       <HeroSection companyData={companyData} uiText={uiText} />
       <SolutionsSection companyData={companyData} uiText={uiText} />

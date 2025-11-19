@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   keywords: ["知识产权", "数据服务", "知象数据", "AI数据平台", "专利数据", "商标数据", "版权保护", "数智研判", "智慧监管", "海外保护", "产业导航", "数据治理", "数据安全"],
   authors: [{ name: "Zhixiang Data" }],
   icons: {
-    icon: "/scxsl-logo.png",
-    shortcut: "/scxsl-logo.png",
-    apple: "/scxsl-logo.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     title: "知象数据 - 为知识产权全链条激活数据价值",
