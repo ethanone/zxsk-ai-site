@@ -8,7 +8,6 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import {
@@ -78,15 +77,15 @@ const LanguageToggle = memo(({ uiText }: { uiText: UIText }) => {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <button
-      onClick={toggleLanguage}
+            <button
+              onClick={toggleLanguage}
       className="fixed top-6 right-6 z-50 flex items-center space-x-2 px-4 py-2 bg-white border border-gray-200 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:border-accent focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
-      title={uiText.navigation.switchLanguage}
-      aria-label={uiText.navigation.switchLanguage}
-    >
+              title={uiText.navigation.switchLanguage}
+              aria-label={uiText.navigation.switchLanguage}
+            >
       <Languages className="w-4 h-4 text-primary" />
       <span className="text-sm font-medium text-gray-700">{language === 'zh' ? 'EN' : '中文'}</span>
-    </button>
+              </button>
   );
 });
 LanguageToggle.displayName = "LanguageToggle";
@@ -177,7 +176,10 @@ const HeroSection = memo(({ companyData, uiText }: { companyData: CompanyData; u
 HeroSection.displayName = "HeroSection";
 
 // 第二屏: Solutions Section
-const SolutionsSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
+const SolutionsSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => {
+  const { language } = useLanguage();
+  
+  return (
   <Section id="solutions" className="bg-white">
     <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20">
       <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
@@ -229,7 +231,8 @@ const SolutionsSection = memo(({ companyData, uiText }: { companyData: CompanyDa
       })}
     </motion.div>
   </Section>
-));
+  );
+});
 SolutionsSection.displayName = "SolutionsSection";
 
 // 第三屏: Data System Section
@@ -327,7 +330,7 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6 tracking-tight text-gray-900 leading-[1.2]">
           {uiText.testimonials.title}
-        </h2>
+      </h2>
         <p className="text-lg text-secondary font-medium mb-8">
           {uiText.testimonials.titleHighlight}
         </p>
@@ -337,34 +340,34 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
 
         <div className="space-y-6">
           {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              {...fadeInUp}
+        <motion.div
+          key={index}
+          {...fadeInUp}
               transition={{ delay: index * 0.15 }}
               className="relative pl-6 border-l-4 border-primary py-2"
             >
               <Quote className="absolute -left-2 top-0 w-8 h-8 text-accent opacity-20" />
               <p className="text-gray-700 italic mb-3 leading-[1.8] text-base">{testimonial.content}</p>
               <p className="text-sm font-medium text-primary">— {testimonial.company}</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+        </motion.div>
+      ))}
+    </div>
+    </motion.div>
 
       {/* 右侧: 联系表单 */}
       <motion.div {...fadeInUp} transition={{ delay: 0.2 }}>
         <p className="mb-4 text-gray-500 font-light text-xs tracking-[0.15em] uppercase">
-          {uiText.contact.badge}
-        </p>
+        {uiText.contact.badge}
+      </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-light mb-6 tracking-tight text-gray-900 leading-[1.2]">
           {uiText.contact.title}
-        </h2>
+      </h2>
         <p className="text-lg text-accent font-medium mb-8">
           {uiText.contact.titleHighlight}
         </p>
         <p className="text-base text-gray-600 mb-12 font-light leading-[1.8]">
-          {uiText.contact.subtitle}
-        </p>
+        {uiText.contact.subtitle}
+      </p>
 
         {/* 联系卡片 */}
         <Card className="bg-gradient-to-br from-primary via-secondary to-accent text-white p-10 border-0 shadow-2xl">
@@ -379,7 +382,7 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
               >
                 {companyData.contact.email}
               </a>
-            </div>
+          </div>
 
             <div>
               <h3 className="text-sm font-light mb-3 tracking-wider uppercase opacity-90">
@@ -392,7 +395,7 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
                 {companyData.contact.phone}
               </a>
               <p className="text-sm mt-2 opacity-80">{companyData.contact.workingHours}</p>
-            </div>
+          </div>
 
             <div>
               <h3 className="text-sm font-light mb-3 tracking-wider uppercase opacity-90">
@@ -401,7 +404,7 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
               <p className="text-base font-light leading-relaxed opacity-90">
                 {companyData.contact.address}
               </p>
-            </div>
+        </div>
 
             <div className="pt-6">
               <Button 
@@ -412,9 +415,9 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
                 <a href={`mailto:${companyData.contact.email}?subject=${encodeURIComponent(language === 'zh' ? '咨询知象数据服务' : 'Inquiry about Zhixiang Data Services')}`} className="flex items-center justify-center space-x-2">
                   <MessageCircle className="w-5 h-5" />
                   <span>{uiText.contact.cta}</span>
-                </a>
-              </Button>
-            </div>
+            </a>
+          </Button>
+        </div>
           </CardContent>
         </Card>
 
