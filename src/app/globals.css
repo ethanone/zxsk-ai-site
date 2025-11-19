@@ -49,35 +49,35 @@
   --card-foreground: #2D1B1B;
   --popover: #FFFFFF;
   --popover-foreground: #2D1B1B;
-  --primary: #8B2F39; /* 枣红色 - 主色 - 静奢风 */
+  --primary: #8B2F2F; /* 枣红色 - 主色 - 参考知象品牌 */
   --primary-foreground: #FFFFFF;
-  --secondary: #6B4C7A; /* 酱紫色 - 静奢风 */
+  --secondary: #3D2734; /* 深酱紫色 - 参考知象品牌 */
   --secondary-foreground: #FFFFFF;
-  --muted: #FAF8F5;
+  --muted: #F5F0EB;
   --muted-foreground: #6B5D5D;
-  --accent: #D4AF37; /* 淡金色 CTA - 静奢风 */
-  --accent-foreground: #FFFFFF;
-  --accent-hover: #C9A02C; /* 淡金色 hover 状态 - 深一点 */
+  --accent: #C9A86A; /* 淡金色 CTA - 参考知象品牌 */
+  --accent-foreground: #2D1B1B;
+  --accent-hover: #B89650; /* 淡金色 hover 状态 */
   --destructive: #EF4444;
-  --border: #E8DDD0;
-  --input: #F5F0E8;
-  --ring: #8B2F39;
-  --chart-1: #8B2F39;
-  --chart-2: #6B4C7A;
-  --chart-3: #D4AF37;
-  --chart-4: #C9A872;
-  --chart-5: #E8DDD0;
+  --border: #E8DDD5;
+  --input: #F5F0EB;
+  --ring: #8B2F2F;
+  --chart-1: #8B2F2F;
+  --chart-2: #3D2734;
+  --chart-3: #C9A86A;
+  --chart-4: #E8DDD5;
+  --chart-5: #F5F0EB;
   --sidebar: #FFFFFF;
   --sidebar-foreground: #2D1B1B;
-  --sidebar-primary: #8B2F39;
+  --sidebar-primary: #8B2F2F;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FAF8F5;
+  --sidebar-accent: #F5F0EB;
   --sidebar-accent-foreground: #2D1B1B;
-  --sidebar-border: #E8DDD0;
-  --sidebar-ring: #8B2F39;
-  --background: #FFFFFF;
+  --sidebar-border: #E8DDD5;
+  --sidebar-ring: #8B2F2F;
+  --background: #FFFBF7;
   --foreground: #2D1B1B;
-  --stat-bg: #FAF8F5; /* 统计数据背景 */
+  --stat-bg: #F5F0EB; /* 统计数据背景 */
 }
 
 .dark {
@@ -251,20 +251,20 @@
   }
 }
 
-/* 优雅的渐变 - 静奢风配色 */
+/* 优雅的渐变 - 静奢风配色 - 参考知象品牌 */
 .gradient-primary {
-  background: linear-gradient(135deg, #8B2F39 0%, #6B4C7A 100%); /* 枣红到酱紫 */
+  background: linear-gradient(135deg, #8B2F2F 0%, #3D2734 100%); /* 枣红到酱紫 */
   color: #FFFFFF;
 }
 
 .gradient-secondary {
-  background: #6B4C7A; /* 酱紫色 */
+  background: linear-gradient(135deg, #3D2734 0%, #2D1B1B 100%); /* 酱紫渐变 */
   color: #FFFFFF;
 }
 
 .gradient-accent {
-  background: #D4AF37; /* 淡金色 */
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #C9A86A 0%, #B89650 100%); /* 淡金色渐变 */
+  color: #2D1B1B;
 }
 
 .gradient-text {
@@ -711,47 +711,47 @@ a[href^="http"]:not(.tech-button):hover::after {
   letter-spacing: -0.03em; /* 更紧凑的字距 */
 }
 
-/* 优化的卡片效果 - 静奢风 */
+/* 优化的卡片效果 - 静奢风 - 参考知象品牌 */
 .tech-card {
   position: relative;
   background: #FFFFFF;
-  border: 1px solid #E8DDD0;
+  border: 1px solid #E8DDD5;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   border-radius: 12px;
 }
 
 .tech-card:hover {
-  border-color: #D4AF37;
-  box-shadow: 0 10px 30px rgba(139, 47, 57, 0.12);
+  border-color: #C9A86A;
+  box-shadow: 0 10px 30px rgba(139, 47, 47, 0.15);
   transform: translateY(-4px);
 }
 
 .tech-card:focus-visible {
-  outline: 2px solid #D4AF37;
+  outline: 2px solid #C9A86A;
   outline-offset: 2px;
 }
 
-/* 数据标签 - 静奢风 */
+/* 数据标签 - 静奢风 - 参考知象品牌 */
 .stat-badge {
   display: inline-flex;
   align-items: center;
   padding: 6px 12px;
-  background: #FAF8F5;
-  border: 1px solid #E8DDD0;
+  background: #F5F0EB;
+  border: 1px solid #E8DDD5;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
-  color: #6B5D5D;
+  color: #8B2F2F;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-/* 大数字展示 - 静奢风 */
+/* 大数字展示 - 静奢风 - 参考知象品牌 */
 .stat-number {
   font-size: 4rem;
   font-weight: 200;
   line-height: 1;
-  color: #8B2F39;
+  color: #8B2F2F;
   letter-spacing: -0.02em;
 }
 
@@ -778,43 +778,43 @@ a[href^="http"]:not(.tech-button):hover::after {
   }
 }
 
-/* 淡金色 CTA 按钮 - 静奢风 */
+/* 淡金色 CTA 按钮 - 静奢风 - 参考知象品牌 */
 .cta-button {
   position: relative;
-  background: #D4AF37;
-  color: #FFFFFF;
-  border: 2px solid #D4AF37;
+  background: linear-gradient(135deg, #C9A86A 0%, #B89650 100%);
+  color: #2D1B1B;
+  border: 2px solid #C9A86A;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   font-weight: 600;
   letter-spacing: 0.05em;
   cursor: pointer;
   user-select: none;
-  box-shadow: 0 4px 14px 0 rgba(212, 175, 55, 0.35);
+  box-shadow: 0 4px 14px 0 rgba(201, 168, 106, 0.35);
 }
 
 .cta-button:hover {
-  background: #C9A02C;
-  border-color: #C9A02C;
-  box-shadow: 0 6px 20px 0 rgba(212, 175, 55, 0.45);
+  background: linear-gradient(135deg, #B89650 0%, #A68540 100%);
+  border-color: #B89650;
+  box-shadow: 0 6px 20px 0 rgba(201, 168, 106, 0.45);
   transform: translateY(-2px);
 }
 
 .cta-button:active {
-  background: #B89030;
+  background: #A68540;
   transform: translateY(0);
 }
 
 .cta-button:focus-visible {
-  outline: 2px solid #D4AF37;
+  outline: 2px solid #C9A86A;
   outline-offset: 2px;
 }
 
-/* 次要按钮 - 枣红色 */
+/* 次要按钮 - 枣红色 - 参考知象品牌 */
 .secondary-button {
   position: relative;
   background: #FFFFFF;
-  color: #8B2F39;
-  border: 2px solid #8B2F39;
+  color: #8B2F2F;
+  border: 2px solid #8B2F2F;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -823,12 +823,13 @@ a[href^="http"]:not(.tech-button):hover::after {
 }
 
 .secondary-button:hover {
-  background: #8B2F39;
+  background: linear-gradient(135deg, #8B2F2F 0%, #3D2734 100%);
   color: #FFFFFF;
+  border-color: #8B2F2F;
 }
 
 .secondary-button:focus-visible {
-  outline: 2px solid #8B2F39;
+  outline: 2px solid #8B2F2F;
   outline-offset: 2px;
 }
 
