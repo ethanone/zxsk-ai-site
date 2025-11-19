@@ -49,15 +49,15 @@
   --card-foreground: #2D1B1B;
   --popover: #FFFFFF;
   --popover-foreground: #2D1B1B;
-  --primary: #8B2F39; /* 枣红色 - 主色 */
+  --primary: #8B2F39; /* 枣红色 - 主色 - 静奢风 */
   --primary-foreground: #FFFFFF;
-  --secondary: #6B4C7A; /* 酱紫色 */
+  --secondary: #6B4C7A; /* 酱紫色 - 静奢风 */
   --secondary-foreground: #FFFFFF;
   --muted: #FAF8F5;
   --muted-foreground: #6B5D5D;
   --accent: #D4AF37; /* 淡金色 CTA - 静奢风 */
   --accent-foreground: #FFFFFF;
-  --accent-hover: #C9A02C; /* 淡金色 hover 状态 */
+  --accent-hover: #C9A02C; /* 淡金色 hover 状态 - 深一点 */
   --destructive: #EF4444;
   --border: #E8DDD0;
   --input: #F5F0E8;
