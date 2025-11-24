@@ -82,7 +82,7 @@ type SectionProps = {
 
 const Section = memo(({ children, className = "", id, fullHeight = true }: SectionProps) => {
   const layoutClass = fullHeight ? "min-h-screen flex items-center justify-center" : "";
-  const spacingClass = fullHeight ? "py-20 sm:py-24 md:py-32" : "py-16 sm:py-20 md:py-24";
+  const spacingClass = fullHeight ? "py-20 sm:py-24 md:py-32" : "py-8 sm:py-10 md:py-12";
 
   return (
     <section
@@ -190,7 +190,7 @@ const HeroSection = memo(({ companyData, uiText }: { companyData: CompanyData; u
         </div>
 
         {/* 统计数据 */}
-        <div className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="mt-10 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
           {[
             { label: language === 'zh' ? '服务客户' : 'Clients', value: '500+' },
             { label: language === 'zh' ? '数据来源' : 'Data Sources', value: '50+' },
@@ -203,7 +203,7 @@ const HeroSection = memo(({ companyData, uiText }: { companyData: CompanyData; u
               transition={{ delay: 0.2 + index * 0.1 }}
               className="text-center"
             >
-              <div className="text-3xl md:text-4xl font-light text-primary mb-2">{stat.value}</div>
+              <div className="text-3xl md:text-4xl font-light text-primary mb-1 md:mb-2">{stat.value}</div>
               <div className="text-sm text-gray-600 font-light">{stat.label}</div>
             </motion.div>
           ))}
@@ -221,14 +221,14 @@ const SolutionsSection = memo(({ companyData, uiText }: { companyData: CompanyDa
   
   return (
   <Section id="solutions" className="bg-white" fullHeight={false}>
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20">
-      <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
+    <motion.div {...fadeInUp} className="text-center mb-6 sm:mb-8 md:mb-10">
+      <p className="mb-3 md:mb-4 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
         {uiText.solutions.badge}
       </p>
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-6 md:mb-8 tracking-tight text-gray-900 leading-[1.2]">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 md:mb-5 tracking-tight text-gray-900 leading-[1.2]">
         {uiText.solutions.title.split(',')[0]}
       </h2>
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary mb-8 md:mb-10">
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-primary mb-4 md:mb-5">
         {language === 'zh' ? '费用低，实效强' : 'Low cost, strong effectiveness'}
       </h3>
       <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto font-light leading-[1.7]">
@@ -278,14 +278,14 @@ SolutionsSection.displayName = "SolutionsSection";
 // 第三屏: Data System Section
 const DataSystemSection = memo(({ companyData, uiText }: { companyData: CompanyData; uiText: UIText }) => (
   <Section className="bg-gradient-to-br from-gray-50 to-white" fullHeight={false}>
-    <motion.div {...fadeInUp} className="text-center mb-16 md:mb-20">
-      <p className="mb-4 md:mb-6 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
+    <motion.div {...fadeInUp} className="text-center mb-10 sm:mb-12 md:mb-14">
+      <p className="mb-3 md:mb-4 text-gray-500 font-light text-xs md:text-sm tracking-[0.15em] uppercase">
         {uiText.dataSystem.badge}
       </p>
-      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-6 md:mb-8 tracking-tight text-gray-900 leading-[1.2]">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light mb-4 md:mb-5 tracking-tight text-gray-900 leading-[1.2]">
         {uiText.dataSystem.title}
       </h2>
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-secondary mb-8 md:mb-10">
+      <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium text-secondary mb-5 md:mb-6">
         {uiText.dataSystem.titleHighlight}
       </h3>
       <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto font-light leading-[1.7]">
@@ -370,8 +370,8 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
   ];
 
   return (
-  <Section id="contact" className="bg-white">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+  <Section id="contact" className="bg-white" fullHeight={false}>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20">
       {/* 左侧: 客户见证 */}
       <motion.div {...fadeInUp}>
         <p className="mb-4 text-gray-500 font-light text-xs tracking-[0.15em] uppercase">
@@ -491,13 +491,13 @@ const TestimonialsContactSection = memo(({ companyData, uiText }: { companyData:
     <motion.div 
       {...fadeInUp} 
       transition={{ delay: 0.4 }}
-      className="mt-20 pt-10 border-t border-gray-200 text-center"
+      className="mt-12 pt-8 border-t border-gray-200 text-center"
     >
       <p className="text-sm text-gray-500 font-light">
         © {new Date().getFullYear()} {companyData.companyInfo.name}. {language === 'zh' ? '版权所有' : 'All rights reserved.'}
       </p>
       <p className="text-xs text-gray-400 mt-2 font-light">
-        {language === 'zh' ? '成立于' : 'Founded in'} {companyData.companyInfo.founded} · {language === 'zh' ? '专注于知识产权数据服务' : 'Focus on IP Data Services'}
+        {language === 'zh' ? '专注于知识产权数据服务' : 'Focus on IP Data Services'}
       </p>
     </motion.div>
   </Section>
