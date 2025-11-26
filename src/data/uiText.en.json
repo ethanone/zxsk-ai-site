@@ -6,13 +6,19 @@
     "services": "Services",
     "cases": "Cases",
     "contact": "Contact",
-    "requestSample": "Request Sample",
+    "requestSample": "Contact Now",
     "switchLanguage": "Switch Language",
     "switchToEnglish": "Switch to Chinese"
   },
   "hero": {
-    "learnMore": "Learn More About Our Services",
-    "contactUs": "Contact Us"
+    "learnMore": "Learn More",
+    "contactUs": "Contact Now"
+  },
+  "solutions": {
+    "badge": "Key Scenario Solutions",
+    "title": "Explore key scenario digital intelligence solutions based on AI technology",
+    "titleHighlight": "Low cost, strong effectiveness",
+    "subtitle": "Zhixiang provides a unified platform that achieves end-to-end data management while enabling data construction, real-time analysis, and value output for key client scenarios."
   },
   "focusAreas": {
     "badge": "Core Service Areas",
@@ -20,22 +26,34 @@
     "titleHighlight": "Focus Areas",
     "subtitle": "Committed to providing precise intelligent solutions for the following key areas, addressing actual needs and challenges in their work"
   },
+  "dataSystem": {
+    "badge": "Data Management System",
+    "title": "Building a technically advanced data management system",
+    "titleHighlight": "with both data scale and reliability",
+    "subtitle": "Meeting customer basic requirements for data authority, standardization, completeness, timeliness, accuracy and usability."
+  },
   "about": {
-    "badge": "About New Shi Long",
+    "badge": "About Zhixiang",
     "title": "Focus on",
-    "titleHighlight": "Premium Agricultural Product Standardization & Intelligence",
+    "titleHighlight": "Intellectual Property Data Services",
     "coreGoal": "Core Mission",
     "vision": "Vision"
   },
   "advantages": {
     "badge": "Core Competitiveness",
     "title": "Why Choose",
-    "titleHighlight": "New Shi Long"
+    "titleHighlight": "Zhixiang Data"
   },
   "team": {
     "badge": "Core Team",
     "title": "Meet Our",
     "titleHighlight": "Expert Team"
+  },
+  "testimonials": {
+    "badge": "Client Testimonials",
+    "title": "Join the major client service group using Zhixiang Data",
+    "titleHighlight": "Flexible cooperation, low threshold",
+    "subtitle": "We proudly showcase our values of long-termism and refund if ineffective to clients, with achieving real results as our common goal."
   },
   "cases": {
     "badge": "Success Cases",
@@ -49,10 +67,10 @@
   },
   "contact": {
     "badge": "Contact Us",
-    "title": "Start Your",
-    "titleHighlight": "Digital Transformation",
-    "titleSuffix": "Journey",
-    "subtitle": "Looking forward to deep integration with various industries, collaborating towards a new future",
+    "title": "Get in touch with our major client service experts",
+    "titleHighlight": "Start with good service",
+    "titleSuffix": "",
+    "subtitle": "Get samples, free customized solutions, and be the first to learn about our new products, new features and new resources.",
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "addressLabel": "Address",
@@ -70,7 +88,6 @@
     "contact": "Contact Us",
     "allRightsReserved": "All rights reserved.",
     "foundedIn": "Founded in",
-    "focusOn": "Focus on AI Digital Transformation"
+    "focusOn": "Focus on IP Data Services"
   }
 }
-

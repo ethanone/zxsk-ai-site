@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -46,38 +47,38 @@
 :root {
   --radius: 0.5rem;
   --card: #FFFFFF;
-  --card-foreground: #0A0A0A;
+  --card-foreground: #2D1B1B;
   --popover: #FFFFFF;
-  --popover-foreground: #0A0A0A;
-  --primary: #000000; /* 主色 */
+  --popover-foreground: #2D1B1B;
+  --primary: #8B2F2F; /* 枣红色 - 主色 - 参考知象品牌 */
   --primary-foreground: #FFFFFF;
-  --secondary: #6B7280;
+  --secondary: #3D2734; /* 深酱紫色 - 参考知象品牌 */
   --secondary-foreground: #FFFFFF;
-  --muted: #FAFAFA;
-  --muted-foreground: #6B7280;
-  --accent: #FF6B35; /* 橙色 CTA - 参考 getdbt 和 Starter Story */
-  --accent-foreground: #FFFFFF;
-  --accent-hover: #FF8C42; /* 橙色 hover 状态 */
+  --muted: #F5F0EB;
+  --muted-foreground: #6B5D5D;
+  --accent: #C9A86A; /* 淡金色 CTA - 参考知象品牌 */
+  --accent-foreground: #2D1B1B;
+  --accent-hover: #B89650; /* 淡金色 hover 状态 */
   --destructive: #EF4444;
-  --border: #E5E7EB;
-  --input: #F3F4F6;
-  --ring: #FF6B35;
-  --chart-1: #000000;
-  --chart-2: #6B7280;
-  --chart-3: #9CA3AF;
-  --chart-4: #D1D5DB;
-  --chart-5: #E5E7EB;
+  --border: #E8DDD5;
+  --input: #F5F0EB;
+  --ring: #8B2F2F;
+  --chart-1: #8B2F2F;
+  --chart-2: #3D2734;
+  --chart-3: #C9A86A;
+  --chart-4: #E8DDD5;
+  --chart-5: #F5F0EB;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #0A0A0A;
-  --sidebar-primary: #000000;
+  --sidebar-foreground: #2D1B1B;
+  --sidebar-primary: #8B2F2F;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #FAFAFA;
-  --sidebar-accent-foreground: #0A0A0A;
-  --sidebar-border: #E5E7EB;
-  --sidebar-ring: #000000;
-  --background: #FFFFFF;
-  --foreground: #0A0A0A;
-  --stat-bg: #F9FAFB; /* 统计数据背景 */
+  --sidebar-accent: #F5F0EB;
+  --sidebar-accent-foreground: #2D1B1B;
+  --sidebar-border: #E8DDD5;
+  --sidebar-ring: #8B2F2F;
+  --background: #FFFBF7;
+  --foreground: #2D1B1B;
+  --stat-bg: #F5F0EB; /* 统计数据背景 */
 }
 
 .dark {
@@ -184,6 +185,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Inter", "PingFang SC", "Microsoft YaHei", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -251,25 +253,25 @@
   }
 }
 
-/* 优雅的渐变 - 参考 Supima 和 Foundry 的简洁风格 */
+/* 优雅的渐变 - 静奢风配色 - 参考知象品牌 */
 .gradient-primary {
-  background: #000000; /* 纯黑色，更专业 */
+  background: linear-gradient(135deg, #8B2F2F 0%, #3D2734 100%); /* 枣红到酱紫 */
   color: #FFFFFF;
 }
 
 .gradient-secondary {
-  background: #0A0A0A; /* 深灰黑 */
+  background: linear-gradient(135deg, #3D2734 0%, #2D1B1B 100%); /* 酱紫渐变 */
   color: #FFFFFF;
 }
 
 .gradient-accent {
-  background: #6B7280; /* 中性灰 */
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #C9A86A 0%, #B89650 100%); /* 淡金色渐变 */
+  color: #2D1B1B;
 }
 
 .gradient-text {
-  color: #0A0A0A; /* 纯黑色文字，更优雅 */
-  -webkit-text-fill-color: #0A0A0A;
+  color: #2D1B1B; /* 深棕色文字，静奢风 */
+  -webkit-text-fill-color: #2D1B1B;
 }
 
 .gradient-hover {
@@ -711,47 +713,47 @@ a[href^="http"]:not(.tech-button):hover::after {
   letter-spacing: -0.03em; /* 更紧凑的字距 */
 }
 
-/* 优化的卡片效果 - 参考 Starter Story 和 getdbt */
+/* 优化的卡片效果 - 静奢风 - 参考知象品牌 */
 .tech-card {
   position: relative;
   background: #FFFFFF;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #E8DDD5;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   border-radius: 12px;
 }
 
 .tech-card:hover {
-  border-color: #D1D5DB;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-color: #C9A86A;
+  box-shadow: 0 10px 30px rgba(139, 47, 47, 0.15);
   transform: translateY(-4px);
 }
 
 .tech-card:focus-visible {
-  outline: 2px solid #FF6B35;
+  outline: 2px solid #C9A86A;
   outline-offset: 2px;
 }
 
-/* 数据标签 - 参考 Starter Story */
+/* 数据标签 - 静奢风 - 参考知象品牌 */
 .stat-badge {
   display: inline-flex;
   align-items: center;
   padding: 6px 12px;
-  background: #F9FAFB;
-  border: 1px solid #E5E7EB;
+  background: #F5F0EB;
+  border: 1px solid #E8DDD5;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 600;
-  color: #6B7280;
+  color: #8B2F2F;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
-/* 大数字展示 - 参考 getdbt */
+/* 大数字展示 - 静奢风 - 参考知象品牌 */
 .stat-number {
   font-size: 4rem;
   font-weight: 200;
   line-height: 1;
-  color: #000000;
+  color: #8B2F2F;
   letter-spacing: -0.02em;
 }
 
@@ -778,43 +780,43 @@ a[href^="http"]:not(.tech-button):hover::after {
   }
 }
 
-/* 橙色 CTA 按钮 - 参考 getdbt 和 Starter Story */
+/* 淡金色 CTA 按钮 - 静奢风 - 参考知象品牌 */
 .cta-button {
   position: relative;
-  background: #FF6B35;
-  color: #FFFFFF;
-  border: 2px solid #FF6B35;
+  background: linear-gradient(135deg, #C9A86A 0%, #B89650 100%);
+  color: #2D1B1B;
+  border: 2px solid #C9A86A;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05em;
   cursor: pointer;
   user-select: none;
-  box-shadow: 0 4px 14px 0 rgba(255, 107, 53, 0.25);
+  box-shadow: 0 4px 14px 0 rgba(201, 168, 106, 0.35);
 }
 
 .cta-button:hover {
-  background: #FF8C42;
-  border-color: #FF8C42;
-  box-shadow: 0 6px 20px 0 rgba(255, 107, 53, 0.35);
+  background: linear-gradient(135deg, #B89650 0%, #A68540 100%);
+  border-color: #B89650;
+  box-shadow: 0 6px 20px 0 rgba(201, 168, 106, 0.45);
   transform: translateY(-2px);
 }
 
 .cta-button:active {
-  background: #FF5722;
+  background: #A68540;
   transform: translateY(0);
 }
 
 .cta-button:focus-visible {
-  outline: 2px solid #FF6B35;
+  outline: 2px solid #C9A86A;
   outline-offset: 2px;
 }
 
-/* 次要按钮 - 保持黑色 */
+/* 次要按钮 - 枣红色 - 参考知象品牌 */
 .secondary-button {
   position: relative;
   background: #FFFFFF;
-  color: #000000;
-  border: 2px solid #000000;
+  color: #8B2F2F;
+  border: 2px solid #8B2F2F;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -823,12 +825,13 @@ a[href^="http"]:not(.tech-button):hover::after {
 }
 
 .secondary-button:hover {
-  background: #000000;
+  background: linear-gradient(135deg, #8B2F2F 0%, #3D2734 100%);
   color: #FFFFFF;
+  border-color: #8B2F2F;
 }
 
 .secondary-button:focus-visible {
-  outline: 2px solid #000000;
+  outline: 2px solid #8B2F2F;
   outline-offset: 2px;
 }
 
