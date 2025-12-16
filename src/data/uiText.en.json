@@ -6,75 +6,75 @@
     "services": "Services",
     "cases": "Cases",
     "contact": "Contact",
-    "requestSample": "Contact Now",
+    "requestSample": "Start Analysis",
     "switchLanguage": "Switch Language",
     "switchToEnglish": "Switch to Chinese"
   },
   "hero": {
     "learnMore": "Learn More",
-    "contactUs": "Contact Now"
+    "contactUs": "Start Analysis"
   },
   "solutions": {
-    "badge": "Key Scenario Solutions",
-    "title": "Explore key scenario digital intelligence solutions based on AI technology",
-    "titleHighlight": "Low cost, strong effectiveness",
-    "subtitle": "Zhixiang provides a unified platform that achieves end-to-end data management while enabling data construction, real-time analysis, and value output for key client scenarios."
+    "badge": "Core Analysis Capabilities",
+    "title": "Guide engineers through multi-round interactive dialogue",
+    "titleHighlight": "Precise · Efficient · Professional",
+    "subtitle": "Based on standard methods such as MOST, MTM, and MODAPTS, providing professional analysis services including time study, motion analysis, OEE calculation, and line balancing."
   },
   "focusAreas": {
     "badge": "Core Service Areas",
     "title": "Our",
-    "titleHighlight": "Focus Areas",
-    "subtitle": "Committed to providing precise intelligent solutions for the following key areas, addressing actual needs and challenges in their work"
+    "titleHighlight": "Expertise",
+    "subtitle": "Committed to providing industrial engineers with precise analysis, calculation, and professional guidance"
   },
   "dataSystem": {
-    "badge": "Data Management System",
-    "title": "Building a technically advanced data management system",
-    "titleHighlight": "with both data scale and reliability",
-    "subtitle": "Meeting customer basic requirements for data authority, standardization, completeness, timeliness, accuracy and usability."
+    "badge": "Professional Methodology",
+    "title": "Based on international standard IE methods",
+    "titleHighlight": "Scientifically rigorous · Industry recognized",
+    "subtitle": "Adopt standard methodologies such as MOST, MTM, and MODAPTS, combined with AI technology, to provide accurate and reliable analysis results."
   },
   "about": {
-    "badge": "About Zhixiang",
+    "badge": "About Us",
     "title": "Focus on",
-    "titleHighlight": "Intellectual Property Data Services",
+    "titleHighlight": "Industrial Engineering Intelligent Analysis",
     "coreGoal": "Core Mission",
     "vision": "Vision"
   },
   "advantages": {
-    "badge": "Core Competitiveness",
+    "badge": "Core Advantages",
     "title": "Why Choose",
-    "titleHighlight": "Zhixiang Data"
+    "titleHighlight": "IE AI Expert"
   },
   "team": {
-    "badge": "Core Team",
+    "badge": "Expert Team",
     "title": "Meet Our",
-    "titleHighlight": "Expert Team"
+    "titleHighlight": "Professional Team"
   },
   "testimonials": {
-    "badge": "Client Testimonials",
-    "title": "Join the major client service group using Zhixiang Data",
-    "titleHighlight": "Flexible cooperation, low threshold",
-    "subtitle": "We proudly showcase our values of long-termism and refund if ineffective to clients, with achieving real results as our common goal."
+    "badge": "Client Cases",
+    "title": "Serving 500+ manufacturing enterprises with IE analysis",
+    "titleHighlight": "Precise calculation · Professional guidance",
+    "subtitle": "We are committed to helping engineers improve analysis efficiency and make scientific decisions through professional industrial engineering methodologies and AI technology."
   },
   "cases": {
     "badge": "Success Cases",
-    "title": "Real Scenarios",
-    "titleHighlight": "of Intelligent Implementation",
-    "subtitle": "Deep integration of AI technology and industry knowledge, creating tangible business value for customers",
-    "technologies": "Core Technologies",
+    "title": "Practical Applications",
+    "titleHighlight": "of Industrial Engineering Analysis",
+    "subtitle": "Deep integration of professional methodologies and AI technology, creating tangible efficiency improvement value for customers",
+    "technologies": "Core Methods",
     "painPoint": "Pain Point: ",
     "features": "Core Features",
     "outcome": "Project Results"
   },
   "contact": {
     "badge": "Contact Us",
-    "title": "Get in touch with our major client service experts",
-    "titleHighlight": "Start with good service",
+    "title": "Get in touch with our industrial engineering experts",
+    "titleHighlight": "Start with a free trial",
     "titleSuffix": "",
-    "subtitle": "Get samples, free customized solutions, and be the first to learn about our new products, new features and new resources.",
+    "subtitle": "Apply for free analysis trial, get industrial engineering methodology materials, and learn about latest features and industry cases.",
     "phoneLabel": "Phone",
     "emailLabel": "Email",
     "addressLabel": "Address",
-    "cta": "Contact Now",
+    "cta": "Start Analysis",
     "values": "Our Core Values",
     "advisors": "Industry Expert Advisors"
   },
@@ -82,12 +82,12 @@
     "quickLinks": "Quick Links",
     "contactInfo": "Contact Information",
     "about": "About Us",
-    "team": "Core Team",
+    "team": "Expert Team",
     "services": "Services",
     "cases": "Success Cases",
     "contact": "Contact Us",
     "allRightsReserved": "All rights reserved.",
     "foundedIn": "Founded in",
-    "focusOn": "Focus on IP Data Services"
+    "focusOn": "Focus on Industrial Engineering Intelligent Analysis"
   }
 }

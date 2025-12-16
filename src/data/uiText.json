@@ -6,75 +6,75 @@
     "services": "服务",
     "cases": "案例",
     "contact": "联系",
-    "requestSample": "即时沟通",
+    "requestSample": "开始分析",
     "switchLanguage": "切换语言",
     "switchToEnglish": "切换到英文"
   },
   "hero": {
     "learnMore": "了解更多",
-    "contactUs": "即时沟通"
+    "contactUs": "开始分析"
   },
   "solutions": {
-    "badge": "关键场景解决方案",
-    "title": "基于人工智能技术探索关键场景数智解决方案",
-    "titleHighlight": "费用低,实效强",
-    "subtitle": "知象提供了一个统一的平台,在实现端到端数据管理的同时,为客户关键场景实现数据搭建、实时分析和价值输出。"
+    "badge": "核心分析能力",
+    "title": "通过多轮交互式对话引导工程师高效分析",
+    "titleHighlight": "精准·高效·专业",
+    "subtitle": "基于MOST、MTM、MODAPTS等标准方法，提供工时测定、动作分析、OEE计算、产线平衡等专业分析服务。"
   },
   "focusAreas": {
     "badge": "核心服务领域",
     "title": "我们的",
-    "titleHighlight": "专注领域",
-    "subtitle": "致力于为以下关键领域提供精准的智能解决方案,解决工作中的实际需求和挑战"
+    "titleHighlight": "专业领域",
+    "subtitle": "致力于为工业工程师提供精准的分析计算和专业指导"
   },
   "dataSystem": {
-    "badge": "数据管理体系",
-    "title": "搭建技术领先的数据管理体系",
-    "titleHighlight": "兼具数据规模和可靠性",
-    "subtitle": "满足客户关于数据权威性、规范性、完整性、时效性、准确性和可用性的基本要求。"
+    "badge": "专业方法论",
+    "title": "基于国际标准工业工程方法",
+    "titleHighlight": "科学严谨·行业认可",
+    "subtitle": "采用MOST、MTM、MODAPTS等标准方法论，结合AI技术，为您提供精准可靠的分析结果。"
   },
   "about": {
-    "badge": "关于知象",
+    "badge": "关于我们",
     "title": "专注于",
-    "titleHighlight": "知识产权数据服务",
+    "titleHighlight": "工业工程智能分析",
     "coreGoal": "核心使命",
     "vision": "愿景"
   },
   "advantages": {
-    "badge": "核心竞争力",
+    "badge": "核心优势",
     "title": "为什么选择",
-    "titleHighlight": "知象数据"
+    "titleHighlight": "工业工程AI专家"
   },
   "team": {
-    "badge": "核心团队",
+    "badge": "专家团队",
     "title": "认识我们的",
-    "titleHighlight": "专家团队"
+    "titleHighlight": "专业团队"
   },
   "testimonials": {
-    "badge": "客户见证",
-    "title": "加入使用知象数据的大客户服务群",
-    "titleHighlight": "合作形式灵活,使用门槛低",
-    "subtitle": "我们很自豪的向客户展示我们长期主义和无效退款的价值观,取得实效是我们共同的目标。"
+    "badge": "客户案例",
+    "title": "服务500+制造企业的工业工程分析",
+    "titleHighlight": "精准计算·专业指导",
+    "subtitle": "我们致力于通过专业的工业工程方法论和AI技术，帮助工程师提升分析效率，做出科学决策。"
   },
   "cases": {
     "badge": "成功案例",
-    "title": "智能落地的",
-    "titleHighlight": "真实场景",
-    "subtitle": "AI技术与行业知识深度融合,为客户创造实实在在的业务价值",
-    "technologies": "核心技术",
+    "title": "工业工程分析的",
+    "titleHighlight": "实践应用",
+    "subtitle": "专业方法论与AI技术深度融合，为客户创造实实在在的效率提升价值",
+    "technologies": "核心方法",
     "painPoint": "痛点: ",
     "features": "核心功能",
     "outcome": "项目成果"
   },
   "contact": {
     "badge": "联系我们",
-    "title": "与我们的大客户服务专家取得联系",
-    "titleHighlight": "从好的服务开始",
+    "title": "与我们的工业工程专家取得联系",
+    "titleHighlight": "从免费体验开始",
     "titleSuffix": "",
-    "subtitle": "获取样本,免费定制你的解决方案,并成为率先了解我们的新产品、新功能和新资源的人。",
+    "subtitle": "申请免费分析体验，获取工业工程方法论资料，并了解最新功能和行业案例。",
     "phoneLabel": "电话",
     "emailLabel": "邮箱",
     "addressLabel": "地址",
-    "cta": "即时沟通",
+    "cta": "开始分析",
     "values": "我们的核心价值观",
     "advisors": "行业专家顾问"
   },
@@ -82,12 +82,12 @@
     "quickLinks": "快速链接",
     "contactInfo": "联系方式",
     "about": "关于我们",
-    "team": "核心团队",
+    "team": "专家团队",
     "services": "服务",
     "cases": "成功案例",
     "contact": "联系我们",
     "allRightsReserved": "版权所有",
     "foundedIn": "成立于",
-    "focusOn": "专注于知识产权数据服务"
+    "focusOn": "专注于工业工程智能分析"
   }
 }

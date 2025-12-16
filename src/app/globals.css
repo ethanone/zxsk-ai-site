@@ -50,13 +50,13 @@
   --card-foreground: #2D1B1B;
   --popover: #FFFFFF;
   --popover-foreground: #2D1B1B;
-  --primary: #8B2F2F; /* 枣红色 - 主色 - 参考知象品牌 */
+  --primary: #8B2F2F; /* 枣红色 - 主色 */
   --primary-foreground: #FFFFFF;
-  --secondary: #3D2734; /* 深酱紫色 - 参考知象品牌 */
+  --secondary: #3D2734; /* 深酱紫色 */
   --secondary-foreground: #FFFFFF;
   --muted: #F5F0EB;
   --muted-foreground: #6B5D5D;
-  --accent: #C9A86A; /* 淡金色 CTA - 参考知象品牌 */
+  --accent: #C9A86A; /* 淡金色 CTA */
   --accent-foreground: #2D1B1B;
   --accent-hover: #B89650; /* 淡金色 hover 状态 */
   --destructive: #EF4444;
@@ -253,7 +253,7 @@
   }
 }
 
-/* 优雅的渐变 - 静奢风配色 - 参考知象品牌 */
+/* 优雅的渐变 - 静奢风配色 */
 .gradient-primary {
   background: linear-gradient(135deg, #8B2F2F 0%, #3D2734 100%); /* 枣红到酱紫 */
   color: #FFFFFF;
@@ -713,7 +713,7 @@ a[href^="http"]:not(.tech-button):hover::after {
   letter-spacing: -0.03em; /* 更紧凑的字距 */
 }
 
-/* 优化的卡片效果 - 静奢风 - 参考知象品牌 */
+/* 优化的卡片效果 - 静奢风 */
 .tech-card {
   position: relative;
   background: #FFFFFF;
@@ -733,7 +733,7 @@ a[href^="http"]:not(.tech-button):hover::after {
   outline-offset: 2px;
 }
 
-/* 数据标签 - 静奢风 - 参考知象品牌 */
+/* 数据标签 - 静奢风 */
 .stat-badge {
   display: inline-flex;
   align-items: center;
@@ -748,7 +748,7 @@ a[href^="http"]:not(.tech-button):hover::after {
   text-transform: uppercase;
 }
 
-/* 大数字展示 - 静奢风 - 参考知象品牌 */
+/* 大数字展示 - 静奢风 */
 .stat-number {
   font-size: 4rem;
   font-weight: 200;
@@ -780,7 +780,7 @@ a[href^="http"]:not(.tech-button):hover::after {
   }
 }
 
-/* 淡金色 CTA 按钮 - 静奢风 - 参考知象品牌 */
+/* 淡金色 CTA 按钮 - 静奢风 */
 .cta-button {
   position: relative;
   background: linear-gradient(135deg, #C9A86A 0%, #B89650 100%);
@@ -811,7 +811,7 @@ a[href^="http"]:not(.tech-button):hover::after {
   outline-offset: 2px;
 }
 
-/* 次要按钮 - 枣红色 - 参考知象品牌 */
+/* 次要按钮 - 枣红色 */
 .secondary-button {
   position: relative;
   background: #FFFFFF;

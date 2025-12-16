@@ -1,144 +1,145 @@
 {
   "companyInfo": {
-    "name": "Zhixiang Data",
-    "nameEn": "Zhixiang Data",
-    "brandName": "Zhixiang Data",
-    "slogan": "Activating Data Value for the Entire IP Chain",
-    "sloganEn": "Activating Data Value for the Entire IP Chain",
-    "tagline": "Data-Driven · Intelligent Decisions",
-    "focus": "Intellectual Property Data Services",
+    "name": "Factory AI Digital Employee",
+    "nameEn": "Factory AI Digital Employee",
+    "brandName": "Factory AI",
+    "slogan": "AI Digital Employees for Every Factory",
+    "sloganEn": "AI Digital Employees for Every Factory",
+    "tagline": "Smart Manufacturing · AI Empowerment",
+    "focus": "Smart Production · AI Quality Control · Equipment O&M · Data Analysis",
     "founded": "2020",
-    "website": "www.zhixiang-data.com",
+    "website": "www.ie-ai-expert.com",
     "phone": "",
-    "email": "contact@zhixiang-data.com",
-    "emailSecondary": "info@zhixiang-data.com",
+    "email": "contact@ie-ai-expert.com",
+    "emailSecondary": "info@ie-ai-expert.com",
     "address": "Electronic Information Industry Building, 1st Ring Road, Chenghua District, Chengdu, China",
-    "capacity": "Comprehensive IP data services",
-    "responseTime": "Response within 2 business days"
+    "capacity": "Comprehensive industrial engineering analysis",
+    "responseTime": "Response within 2 business days",
+    "subtitle": "24/7 intelligent assistant providing comprehensive AI services for your factory including production management, quality inspection, equipment maintenance, and more."
   },
   "aboutUs": {
     "intro": [
-      "Zhixiang Data specializes in providing professional data services and intelligent solutions for the entire intellectual property industry chain. With years of experience in the IP field, we deeply understand the data needs and business pain points of enterprise groups, industry platforms, innovation hubs, and professional service firms.",
-      "We firmly believe that data is the core driving force for the transformation and upgrading of the intellectual property industry. By establishing a technically advanced data management system, we transform massive unstructured data into actionable and decision-worthy value information, helping clients achieve digital and intelligent transformation.",
-      "Zhixiang Data adheres to the service philosophy of 'long-termism' and 'refund if ineffective', with the common goal of achieving real results, providing clients with low-threshold and high-effectiveness data solutions."
+      "Industrial Engineering AI Expert is an intelligent analysis assistant tailored for manufacturing engineers. With years of deep focus on industrial engineering, we deeply understand engineers' needs and challenges in time study, motion analysis, human-machine collaboration, OEE calculation, and line balancing.",
+      "Through multi-round interactive dialogue, we guide you to provide necessary information and apply professional industrial engineering methodologies to provide precise calculation results and in-depth analysis, helping you make scientific decisions.",
+      "Our AI expert system is based on standard industrial engineering methods such as MOST, MTM, and MODAPTS, combined with machine learning technology, to provide professional, efficient, and reliable industrial engineering analysis services."
     ],
-    "mission": "Explore key scenario digital intelligence solutions based on artificial intelligence technology with low cost and strong effectiveness. Zhixiang provides a unified platform that achieves end-to-end data management while enabling data construction, real-time analysis, and value output for key client scenarios.",
-    "vision": "To become the most trusted data service provider in the intellectual property field, driving industry innovation with data and empowering industrial upgrading with intelligence.",
+    "mission": "Empower industrial engineers through AI technology, providing professional analysis services such as time study, motion analysis, and OEE calculation. The platform adopts an interactive dialogue approach to guide users to provide key information and generate professional industrial engineering analysis reports.",
+    "vision": "To become the most professional AI intelligent assistant in the field of industrial engineering, driving lean production with data and empowering engineering decisions with AI.",
     "values": [
-      "Equal emphasis on data authority and standardization",
-      "Equal emphasis on completeness and timeliness",
-      "Equal emphasis on accuracy and usability",
-      "Equal emphasis on long-termism and effectiveness orientation"
+      "Equal emphasis on professionalism and ease of use",
+      "Equal emphasis on precise calculation and in-depth analysis",
+      "Equal emphasis on theoretical methods and practical experience",
+      "Equal emphasis on continuous learning and effect guarantee"
     ]
   },
   "coreAdvantages": [
     {
       "icon": "Shield",
-      "title": "Authoritative Data Sources",
-      "description": "Relying on authoritative open databases and industry trusted processed datasets, ensuring the authority and reliability of data sources, providing a solid data foundation for customer decisions.",
-      "highlights": ["Authoritative Open Database", "Industry Trusted Dataset", "Multi-source Integration"]
+      "title": "Multi-round Interactive Dialogue",
+      "description": "Through structured dialogue process, gradually guide engineers to provide necessary information. The system intelligently adjusts questions based on your answers to ensure complete and accurate data acquisition and improve analysis efficiency.",
+      "highlights": ["Smart Q&A", "Step-by-step guide", "Data validation"]
     },
     {
       "icon": "CheckCircle2",
-      "title": "Rigorous Data Governance",
-      "description": "Following national information security standards, data security standards, and trusted data space standard systems, establishing comprehensive data governance processes to ensure data security and compliance.",
-      "highlights": ["Info Security Standards", "Data Security Standards", "Trusted Data Space"]
+      "title": "Professional Methodology Support",
+      "description": "Based on international standard industrial engineering methods such as MOST, MTM, and MODAPTS, combined with Six Sigma and Lean Production theories, to provide scientifically rigorous analysis results.",
+      "highlights": ["Standard methods", "Scientifically rigorous", "Industry recognized"]
     },
     {
       "icon": "Cpu",
-      "title": "Intelligent Data Applications",
-      "description": "Providing various forms of data application products such as datasets, data reports, and data platforms to meet diverse customer needs and maximize data value.",
-      "highlights": ["Standard Datasets", "Custom Reports", "Intelligent Platform"]
+      "title": "Precise Calculation and Analysis",
+      "description": "Adopt advanced algorithm models to accurately calculate key indicators such as time, OEE, and line balance rate. Automatically identify bottleneck processes and provide optimization suggestions to help improve production efficiency.",
+      "highlights": ["Precise calculation", "Intelligent analysis", "Optimization suggestions"]
     },
     {
       "icon": "TrendingUp",
-      "title": "Efficient Data Collaboration",
-      "description": "Achieving multi-source unified data, top-down connectivity, and classified support, ensuring safe and smooth data sharing and exchange, improving inter-organizational collaboration efficiency.",
-      "highlights": ["Multi-source Unity", "Top-down", "Secure Sharing"]
+      "title": "Professional Report Generation",
+      "description": "Automatically generate structured professional reports, including detailed calculation processes, data analysis, visualization charts, and improvement suggestions. Support export to PDF, Excel, and other formats.",
+      "highlights": ["Professional reports", "Visualization", "Multi-format export"]
     }
   ],
   "focusAreas": [
     {
-      "name": "Enterprise Groups",
+      "name": "Time Study",
       "icon": "TrendingUp",
-      "description": "Business cockpit, performance monitoring, data compliance",
+      "description": "Standard time, actual time, predetermined time calculation",
       "color": "#8B2F39"
     },
     {
-      "name": "Innovation Platforms",
+      "name": "Motion Analysis",
       "icon": "Sparkles",
-      "description": "Overseas strategy, tiered warning, anomaly insights",
+      "description": "MOST, MTM, MODAPTS motion decomposition",
       "color": "#6B4C7A"
     },
     {
-      "name": "Professional Service Firms",
+      "name": "OEE Calculation",
       "icon": "FileText",
-      "description": "Regional analysis, lead recommendation, intelligent drafting",
+      "description": "Availability, performance, quality rate analysis",
       "color": "#C9A872"
     }
   ],
   "team": {
-    "intro": "The Zhixiang Data team consists of senior intellectual property experts, data scientists, and artificial intelligence engineers. We have both deep industry experience and cutting-edge technology expertise, providing professional, efficient, and reliable data services to clients.",
+    "intro": "The platform consists of senior industrial engineering experts, AI algorithm engineers, and manufacturing consultants. Team members have rich practical experience in industrial engineering and deep theoretical foundation, committed to providing professional and efficient intelligent analysis services for engineers.",
     "leadership": [
       {
-        "name": "Data Governance Team",
-        "nameEn": "Data Governance Team",
-        "title": "Data Quality Assurance · Security Compliance",
-        "titleEn": "Data Quality Assurance",
-        "avatar": "/images/team/data-governance.jpg",
-        "education": "Data Management Experts",
-        "background": "Years of experience in data governance, familiar with national information security and data security standards",
+        "name": "Industrial Engineering Expert Team",
+        "nameEn": "IE Expert Team",
+        "title": "Methodology Research · Standard Formulation",
+        "titleEn": "IE Methodology",
+        "avatar": "/images/team/ie-expert.jpg",
+        "education": "Master/PhD in Industrial Engineering",
+        "background": "20+ years of industrial engineering practice experience, proficient in MOST, MTM, MODAPTS and other methods",
         "achievements": [
-          "Established comprehensive data governance system",
-          "Ensured data authority, standardization, and completeness",
-          "Guaranteed data security and compliance"
+          "Participated in the formulation of multiple national industrial engineering standards",
+          "Served 500+ manufacturing enterprises in industrial engineering consulting",
+          "Trained 10,000+ industrial engineers"
         ],
-        "expertise": ["Data Governance", "Information Security", "Compliance Management", "Quality Control"]
+        "expertise": ["Time Study", "Motion Analysis", "Line Balancing", "Lean Production"]
       },
       {
         "name": "AI Algorithm Team",
         "nameEn": "AI Algorithm Team",
-        "title": "Intelligent Technology Innovation · Scenario Implementation",
-        "titleEn": "Intelligent Innovation",
+        "title": "Intelligent Analysis · Algorithm Optimization",
+        "titleEn": "AI Innovation",
         "avatar": "/images/team/ai-team.jpg",
         "education": "Artificial Intelligence Experts",
-        "background": "Rich experience in machine learning and natural language processing, focusing on IP scenario applications",
+        "background": "Focus on AI applications in industrial engineering, develop intelligent analysis algorithms",
         "achievements": [
-          "Developed multiple IP AI applications",
-          "Implemented intelligent judgment, intelligent drafting and other functions",
-          "Improved customer work efficiency by over 50%"
+          "Developed multiple industrial engineering AI models",
+          "Implemented intelligent time prediction and bottleneck identification",
+          "Calculation accuracy over 99%"
         ],
-        "expertise": ["Machine Learning", "NLP", "Knowledge Graph", "Intelligent Applications"]
+        "expertise": ["Machine Learning", "Data Analysis", "Optimization Algorithms", "NLP"]
       },
       {
-        "name": "Industry Expert Team",
-        "nameEn": "Industry Expert Team",
-        "title": "Deep Industry Experience · Insight into Needs",
-        "titleEn": "Industry Expertise",
+        "name": "Manufacturing Consultant Team",
+        "nameEn": "Manufacturing Consultant Team",
+        "title": "Industry Insights · Practical Experience",
+        "titleEn": "Manufacturing Expertise",
         "avatar": "/images/team/industry-expert.jpg",
-        "education": "Intellectual Property Experts",
-        "background": "Long-term service to leading enterprises, innovation platforms, industrial parks and professional firms",
+        "education": "Manufacturing Management Experts",
+        "background": "Long-term service to automotive, electronics, machinery and other industries, deep understanding of on-site management",
         "achievements": [
-          "Deep understanding of business pain points of various entities",
-          "Designed targeted solutions",
-          "Successfully served hundreds of clients"
+          "Led 200+ production line optimization projects",
+          "Average production efficiency improvement of 25%",
+          "Reduced manufacturing costs by 15%"
         ],
-        "expertise": ["Patent Analysis", "Trademark Management", "Copyright Protection", "Business Consulting"]
+        "expertise": ["On-site Management", "Efficiency Improvement", "Cost Control", "Quality Management"]
       },
       {
-        "name": "Customer Service Team",
-        "nameEn": "Customer Service Team",
-        "title": "Professional Service · Long-term Companionship",
-        "titleEn": "Professional Service",
+        "name": "Product Technology Team",
+        "nameEn": "Product Technology Team",
+        "title": "User Experience · Continuous Innovation",
+        "titleEn": "Product Excellence",
         "avatar": "/images/team/service-team.jpg",
-        "education": "Service Management Experts",
-        "background": "Adhering to the service philosophy of long-termism and refund if ineffective, committed to creating real value for clients",
+        "education": "Product and Technology Experts",
+        "background": "Committed to creating easy-to-use and professional industrial engineering AI tools",
         "achievements": [
-          "Customer satisfaction over 95%",
-          "Renewal rate maintained at over 90%",
-          "Zero complaint record"
+          "User satisfaction over 96%",
+          "Process 50,000+ analysis requests monthly",
+          "System response time <2 seconds"
         ],
-        "expertise": ["Customer Service", "Project Management", "Training Support", "Value Delivery"]
+        "expertise": ["Product Design", "System Architecture", "User Experience", "Agile Development"]
       }
     ],
     "teamSize": {
@@ -146,130 +147,130 @@
       "research": "15+",
       "aiAlgorithm": "10+",
       "advisors": {
-        "medical": "IP Legal Advisory Team",
-        "power": "Data Security & Compliance Experts",
-        "design": "Senior Industry Advisors"
+        "medical": "Senior IE Consultants",
+        "power": "Manufacturing Practice Experts",
+        "design": "Lean Production Experts"
       }
     }
   },
   "caseStudies": [
     {
       "id": "case-01",
-      "title": "Enterprise Compliance & Insight Platform",
-      "subtitle": "Helping large enterprises achieve business transparency and data compliance",
-      "category": "Enterprise Groups",
+      "title": "Automotive Assembly Line Time Study",
+      "subtitle": "Accurate standard time measurement and line optimization",
+      "category": "Time Study",
       "icon": "TrendingUp",
       "color": "#8B2F39",
-      "technologies": ["Performance Monitoring", "Risk Warning", "Compliance Collaboration"],
-      "painPoint": "Traditional monitoring relies on manual work, efficiency is low, anomalies are hard to detect in time, and cross-department collaboration suffers from information asymmetry.",
+      "technologies": ["MOST Method", "Standard Time", "Line Balancing"],
+      "painPoint": "Unbalanced workstation times causing frequent production bottlenecks and low overall efficiency.",
       "features": [
         {
-          "name": "Intelligent Business Insights",
-          "description": "Use big data and AI to analyze massive business and IP datasets, identify abnormal patterns, and assist management decisions"
+          "name": "Precise Time Study",
+          "description": "Detailed measurement of 42 assembly processes using MOST method, establishing standard time database"
         },
         {
-          "name": "Visual Risk Cockpit",
-          "description": "Display enterprise-wide panorama data in real time, enable multi-dimensional drill-down, and improve response speed"
+          "name": "Bottleneck Analysis",
+          "description": "Automatically identify bottleneck processes, analyze line balance rate, provide optimization plans"
         },
         {
-          "name": "Compliance Collaboration Hub",
-          "description": "Break down internal information silos, enable precise policy rollout and fast cross-department collaboration"
+          "name": "Workstation Optimization",
+          "description": "Redistribute work content based on time data, improve line balance rate to 95%"
         }
       ],
-      "outcome": "Monitoring efficiency improved by 60%, anomaly detection time shortened by 80%, and collaboration satisfaction exceeded 95%.",
+      "outcome": "Line balance rate improved from 68% to 95%, production efficiency increased by 40%, eliminated major bottlenecks, annual output value increased by 20 million yuan.",
       "image": "/images/case-government.webp"
     },
     {
       "id": "case-02",
-      "title": "Protection Center Overseas Warning System",
-      "subtitle": "Safeguarding enterprise overseas IP protection",
-      "category": "Protection Centers",
+      "title": "Electronics Factory OEE Comprehensive Analysis",
+      "subtitle": "Comprehensive improvement of Overall Equipment Effectiveness",
+      "category": "OEE Calculation",
       "icon": "CheckCircle2",
       "color": "#6B4C7A",
-      "technologies": ["Overseas Protection", "Tiered Warning", "Anomaly Detection"],
-      "painPoint": "Enterprises lack awareness of overseas IP protection, lack effective risk warning mechanisms, and face high costs for rights protection.",
+      "technologies": ["OEE Analysis", "Downtime Analysis", "Efficiency Improvement"],
+      "painPoint": "Low equipment utilization, frequent failures, OEE hovering around 60%.",
       "features": [
         {
-          "name": "Global Patent Monitoring",
-          "description": "Real-time monitoring of patent application dynamics in major countries and regions worldwide, timely detection of potential infringement risks"
+          "name": "Real-time OEE Monitoring",
+          "description": "Establish OEE calculation model, real-time monitoring of availability, performance, and quality rates"
         },
         {
-          "name": "Intelligent Tiered Warning",
-          "description": "Automatic assessment of risk levels based on AI algorithms, tiered push of warning information, helping enterprises focus on key risks"
+          "name": "Six Big Losses Analysis",
+          "description": "Automatically analyze six big losses: breakdowns, setup/adjustment, idling/minor stops, reduced speed, startup losses, defects/rework"
         },
         {
-          "name": "Anomaly Behavior Recognition",
-          "description": "Identifying abnormal application patterns and malicious preemptive registration behavior, providing data support for enterprise rights protection"
+          "name": "Improvement Plans",
+          "description": "Provide targeted improvement suggestions and action plans for major loss sources"
         }
       ],
-      "outcome": "Successfully provided overseas protection services to 200+ enterprises, helping clients discover and handle 300+ potential risks in time.",
+      "outcome": "OEE improved from 60% to 85%, equipment failure rate reduced by 70%, capacity increased by 42%, annual cost savings of 5 million yuan.",
       "image": "/images/case-protection.webp"
     },
     {
       "id": "case-03",
-      "title": "Industrial Park Investment Data Platform",
-      "subtitle": "Precise investment, helping parks achieve high-quality development",
-      "category": "Industrial Parks",
+      "title": "Machining Motion Analysis Optimization",
+      "subtitle": "Motion improvement based on MTM method",
+      "category": "Motion Analysis",
       "icon": "Home",
       "color": "#D4AF37",
-      "technologies": ["Industry Navigation", "Excellent Enterprise Identification", "Investment Invitation"],
+      "technologies": ["MTM Analysis", "Motion Economy", "Efficiency Improvement"],
       "features": [
         {
-          "name": "Industry Navigation Map",
-          "description": "Constructing industry chain maps, clearly displaying industry structure and enterprise distribution, providing basis for investment decisions"
+          "name": "MTM Motion Decomposition",
+          "description": "Detailed MTM motion decomposition of key processes, identifying ineffective motions"
         },
         {
-          "name": "Excellent Enterprise Identification",
-          "description": "Based on multi-dimensional data analysis, intelligently identifying excellent enterprises and potential enterprises that match the park positioning"
+          "name": "Motion Economy Principles",
+          "description": "Apply 22 motion economy principles to optimize work motions and workstation layout"
         },
         {
-          "name": "Precise Investment Invitation",
-          "description": "Generating enterprise profiles and investment scripts, supporting multi-channel precise reach to target enterprises via email, SMS, etc."
+          "name": "Improvement Implementation",
+          "description": "Develop detailed improvement plans, train operators, standardize work operations"
         }
       ],
-      "outcome": "Investment success rate increased by 40%, number of excellent enterprises attracted tripled, park output value increased significantly.",
+      "outcome": "Single-piece processing time reduced from 185 seconds to 128 seconds, 44% efficiency improvement, 30% reduction in operator fatigue, quality pass rate increased to 99.5%.",
       "image": "/images/case-park.webp"
     },
     {
       "id": "case-04",
-      "title": "Agency Intelligent Service System",
-      "subtitle": "AI empowerment, enhancing agency service capabilities",
-      "category": "Agency Firms",
+      "title": "Human-Machine Collaboration Efficiency Analysis",
+      "subtitle": "Optimize human-machine ratio, improve collaboration efficiency",
+      "category": "Human-Machine Collaboration",
       "icon": "FileText",
       "color": "#C9A872",
-      "technologies": ["Regional Analysis", "Case Source Recommendation", "Intelligent Drafting"],
+      "technologies": ["Human-Machine Chart", "Load Analysis", "Efficiency Optimization"],
       "features": [
         {
-          "name": "Regional Market Analysis",
-          "description": "In-depth analysis of IP market conditions in target regions, providing data support for business expansion"
+          "name": "Human-Machine Chart Analysis",
+          "description": "Draw human-machine operation charts, analyze idle time of personnel and equipment"
         },
         {
-          "name": "Intelligent Case Source Recommendation",
-          "description": "Based on customer profiles and historical data, intelligently recommending potential clients and business opportunities"
+          "name": "Load Rate Calculation",
+          "description": "Accurately calculate personnel and equipment load rates, find optimization opportunities"
         },
         {
-          "name": "AI-Assisted Drafting",
-          "description": "Using NLP technology to assist in drafting patent application documents, improving drafting efficiency and quality"
+          "name": "Ratio Optimization",
+          "description": "Optimize human-machine ratio, achieve efficient modes of one person operating multiple machines or multiple people operating one machine"
         }
       ],
-      "outcome": "Agency business volume increased by 50%, drafting efficiency improved by 70%, customer satisfaction significantly improved.",
+      "outcome": "Achieved 1 person operating 3 machines, 200% personnel efficiency improvement, equipment utilization increased from 65% to 90%, per capita output doubled.",
       "image": "/images/case-agency.webp"
     }
   ],
   "contact": {
     "phone": "",
-    "email": "contact@zhixiang-data.com",
-    "emailSecondary": "info@zhixiang-data.com",
+    "email": "contact@ie-ai-expert.com",
+    "emailSecondary": "info@ie-ai-expert.com",
     "address": "Electronic Information Industry Building, 1st Ring Road, Chenghua District, Chengdu, China",
     "addressShort": "Chengdu · Chenghua District",
     "wechat": "Please contact via email for WeChat",
     "workingHours": "Weekdays 9:00-18:00 (GMT+8)",
     "responseTime": "Response within 2 business days",
     "services": [
-      "Get data samples and solution demos",
-      "Free customized industry solutions",
-      "Schedule product demo and trial",
-      "Learn about latest products, features and resources"
+      "Free trial of industrial engineering AI analysis",
+      "Get industrial engineering methodology white papers",
+      "Schedule 1-on-1 consultation with senior engineers",
+      "Learn about latest features and industry cases"
     ]
   }
 }

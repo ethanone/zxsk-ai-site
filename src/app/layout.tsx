@@ -4,20 +4,20 @@ import { cn } from "@/lib/utils";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 
 export const metadata: Metadata = {
-  title: "知象数据 - 为知识产权全链条激活数据价值 | AI数据服务平台",
-  description: "知象数据专注于为知识产权全产业链提供专业的数据服务和智能解决方案。服务政府机关、保护中心、产业园区、代理机构，提供数智研判、智慧监管、海外保护、产业导航等关键场景解决方案。依托政府权威开放数据库，遵循国家信息安全和数据安全标准，为客户提供低成本、高实效的数据服务。",
-  keywords: ["知识产权", "数据服务", "知象数据", "AI数据平台", "专利数据", "商标数据", "版权保护", "数智研判", "智慧监管", "海外保护", "产业导航", "数据治理", "数据安全"],
-  authors: [{ name: "Zhixiang Data" }],
+  title: "工厂AI数字员工 - 让每个工厂都拥有AI数字员工 | 智能工厂平台",
+  description: "工厂AI数字员工平台提供7×24小时智能助手服务，为您的工厂提供专业的生产管理、质量检测、设备运维等全方位AI服务。智能生产、AI质检、设备运维、数据分析，助力工厂降本增效。",
+  keywords: ["工厂AI", "数字员工", "智能制造", "AI助手", "生产管理", "质量检测", "设备运维", "工厂智能化", "工业AI", "智能工厂"],
+  authors: [{ name: "Factory AI Digital Employee" }],
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "知象数据 - 为知识产权全链条激活数据价值",
-    description: "专业的知识产权数据服务商 | AI驱动 | 权威数据源 | 安全合规 | 智能应用",
-    url: "https://www.zhixiang-data.com",
-    siteName: "知象数据",
+    title: "工厂AI数字员工 - 让每个工厂都拥有AI数字员工",
+    description: "智能工厂平台 | AI驱动 | 7×24小时服务 | 降本增效 | 智能分析",
+    url: "https://www.factory-ai.com",
+    siteName: "工厂AI数字员工",
     locale: "zh_CN",
     type: "website",
   },
@@ -39,7 +39,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         {/* DNS 预连接 - 性能优化 */}
-        <link rel="dns-prefetch" href="https://www.zhixiang-data.com" />
+        <link rel="dns-prefetch" href="https://www.factory-ai.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
