@@ -78,20 +78,21 @@ export default function HomePage() {
         <div className="container mx-auto max-w-6xl text-center">
           <motion.div {...fadeInUp}>
             {/* Logo - 大气简洁设计 */}
-            <div className="mb-16 flex justify-center">
+            <div className="mb-12 sm:mb-16 flex justify-center">
               <motion.div 
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="relative"
+                className="relative w-32 h-32 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-60 lg:h-60"
               >
                 <Image
-                  src="/images/team/favorite.png"
+                  src="/images/team/ChatGPT_Image_2025年12月16日_20_59_50-removebg-preview.png"
                   alt="工厂AI数字员工"
                   width={240}
                   height={240}
-                  className="object-contain drop-shadow-2xl"
+                  className="object-contain drop-shadow-2xl w-full h-full"
                   priority
+                  sizes="(max-width: 640px) 128px, (max-width: 768px) 192px, (max-width: 1024px) 224px, 240px"
                 />
               </motion.div>
             </div>
